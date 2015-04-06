@@ -1,0 +1,73 @@
+# view res/layout/activity_guide.xml #generated:7
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:13
+-keep class android.support.v4.widget.DrawerLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:28
+-keep class example.swm.app.config.MyApplication { <init>(...); }
+
+# view res/layout/local_pic_gridview_item.xml #generated:11
+# view res/layout/local_pic_gridview_second_item.xml #generated:8
+-keep class example.swm.app.image.local.MyImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:81
+-keep class example.swm.app.receiver.LoginReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:78
+-keep class example.swm.app.service.DownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class example.swm.app.ui.FirstActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class example.swm.app.ui.GroupDetailsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:68
+-keep class example.swm.app.ui.GroupListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class example.swm.app.ui.GuideActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class example.swm.app.ui.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class example.swm.app.ui.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class example.swm.app.ui.ScheduleDetailActivity { <init>(...); }
+
+# view res/layout/notice_viewpaper.xml #generated:7
+-keep class example.swm.app.widget.ChildViewPager { <init>(...); }
+
+# view res/layout/main_left_fragment.xml #generated:2
+-keep class example.swm.app.widget.CustomScrollView { <init>(...); }
+
+# view res/layout/fragment_home.xml #generated:18
+-keep class example.swm.app.widget.KeywordsFlow { <init>(...); }
+
+# view res/layout/activity_imageview.xml #generated:15
+-keep class example.swm.app.widget.ProgressWheel { <init>(...); }
+
+# view res/layout/frament_user_info.xml #generated:18
+-keep class example.swm.app.widget.PullScrollView { <init>(...); }
+
+# view res/layout/frament_user_info.xml #generated:41
+# view res/layout/main_left_fragment.xml #generated:33
+-keep class example.swm.app.widget.RoundedImageView { <init>(...); }
+
+# view res/layout/local_pic_gridview.xml #generated:62
+-keep class example.swm.app.widget.StretchScrollView { <init>(...); }
+
+# view res/layout/activity_grouplist.xml #generated:15
+# view res/layout/fragment_mygroups.xml #generated:7
+# view res/layout/frament_user_info.xml #generated:212
+-keep class example.swm.app.xlistview.XListView { <init>(...); }
+
+# view res/layout/swipeback_layout.xml #generated:2
+-keep class me.storm.ninegag.view.swipeback.SwipeBackLayout { <init>(...); }
+
+# view res/layout/activity_imageview.xml #generated:8
+-keep class uk.co.senab.photoview.PhotoView { <init>(...); }
+

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="#f1f1f1"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="6dip"
+        android:paddingRight="6dip"
+        android:text="@string/search"
+        android:background="@null"
+        android:clickable="true"
+        android:textColor="@color/search_textview_selector"
+        android:textSize="@dimen/medium_text_size"
+         />
+
+    <RelativeLayout
+        android:id="@+id/rlSearchFrameDelete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/btnSearch"
+        android:gravity="center_vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f1f1f1"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:background="@drawable/search_bg"
+                android:gravity="center_vertical"
+                android:hint="@string/name"
+                android:paddingLeft="35dip"
+                android:singleLine="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:src="@drawable/icon_search" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/ivDeleteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:paddingRight="20dp"
+            android:src="@drawable/delete"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

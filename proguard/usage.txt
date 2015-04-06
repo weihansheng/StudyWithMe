@@ -1,0 +1,649 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+com.devspark.appmsg.AppMsg:
+    public static final int LENGTH_SHORT
+    public static final int LENGTH_LONG
+    public static final int LENGTH_STICKY
+    public static final int PRIORITY_LOW
+    public static final int PRIORITY_NORMAL
+    public static final int PRIORITY_HIGH
+    148:148:public static com.devspark.appmsg.AppMsg makeText(android.app.Activity,java.lang.CharSequence,com.devspark.appmsg.AppMsg$Style,android.view.View$OnClickListener)
+    161:161:public static com.devspark.appmsg.AppMsg makeText(android.app.Activity,java.lang.CharSequence,com.devspark.appmsg.AppMsg$Style,float)
+    175:175:public static com.devspark.appmsg.AppMsg makeText(android.app.Activity,java.lang.CharSequence,com.devspark.appmsg.AppMsg$Style,float,android.view.View$OnClickListener)
+    205:208:public static com.devspark.appmsg.AppMsg makeText(android.app.Activity,java.lang.CharSequence,com.devspark.appmsg.AppMsg$Style,int,android.view.View$OnClickListener)
+    224:227:public static com.devspark.appmsg.AppMsg makeText(android.app.Activity,java.lang.CharSequence,com.devspark.appmsg.AppMsg$Style,int,float,android.view.View$OnClickListener)
+    241:244:public static com.devspark.appmsg.AppMsg makeText(android.app.Activity,java.lang.CharSequence,com.devspark.appmsg.AppMsg$Style,int,float)
+    262:262:public static com.devspark.appmsg.AppMsg makeText(android.app.Activity,java.lang.CharSequence,com.devspark.appmsg.AppMsg$Style,android.view.View)
+    279:279:public static com.devspark.appmsg.AppMsg makeText(android.app.Activity,java.lang.CharSequence,com.devspark.appmsg.AppMsg$Style,android.view.View,android.view.View$OnClickListener)
+    312:312:private static com.devspark.appmsg.AppMsg makeText(android.app.Activity,java.lang.CharSequence,com.devspark.appmsg.AppMsg$Style,android.view.View,boolean,android.view.View$OnClickListener)
+    362:377:private static com.devspark.appmsg.AppMsg makeText(android.app.Activity,java.lang.CharSequence,com.devspark.appmsg.AppMsg$Style,android.view.View,boolean,float,android.view.View$OnClickListener)
+    396:396:public static com.devspark.appmsg.AppMsg makeText(android.app.Activity,int,com.devspark.appmsg.AppMsg$Style,android.view.View,boolean)
+    412:412:public static com.devspark.appmsg.AppMsg makeText(android.app.Activity,int,com.devspark.appmsg.AppMsg$Style)
+    428:428:public static com.devspark.appmsg.AppMsg makeText(android.app.Activity,int,com.devspark.appmsg.AppMsg$Style,int)
+    456:458:public void cancel()
+    465:466:public static void cancelAll()
+    474:475:public static void cancelAll(android.app.Activity)
+    490:491:public void setView(android.view.View)
+    509:510:public void setDuration(int)
+    527:528:public void setText(int)
+    536:544:public void setText(java.lang.CharSequence)
+    565:566:public com.devspark.appmsg.AppMsg setLayoutParams(android.view.ViewGroup$LayoutParams)
+    577:578:public com.devspark.appmsg.AppMsg setLayoutGravity(int)
+    596:597:public void setFloating(boolean)
+    629:629:public int getPriority()
+    670:671:public void setParent(android.view.ViewGroup)
+    681:682:public void setParent(int)
+com.devspark.appmsg.AppMsg$Style:
+    710:710:public int getDuration()
+    717:717:public int getBackground()
+com.devspark.appmsg.MsgManager:
+    private static final int MESSAGE_DISPLAY
+    private static final int MESSAGE_ADD_VIEW
+    private static final int MESSAGE_REMOVE
+    106:117:static synchronized void clearAll()
+itstudio.app.wq.BuildConfig
+itstudio.app.wq.R:
+    10:10:public R()
+itstudio.app.wq.R$anim
+itstudio.app.wq.R$attr
+itstudio.app.wq.R$color
+itstudio.app.wq.R$dimen
+itstudio.app.wq.R$drawable
+itstudio.app.wq.R$id
+itstudio.app.wq.R$layout
+itstudio.app.wq.R$string
+itstudio.app.wq.R$style
+itstudio.app.wq.R$styleable:
+    public static final int FlowLayout_horizontalSpacing
+    public static final int FlowLayout_verticalSpacing
+    public static final int FlowLayout_LayoutParams_layout_breakLine
+    public static final int FlowLayout_LayoutParams_layout_horizontalSpacing
+    public static final int PagerSlidingTabStrip_pstsDividerColor
+    public static final int PagerSlidingTabStrip_pstsDividerPadding
+    public static final int PagerSlidingTabStrip_pstsIndicatorColor
+    public static final int PagerSlidingTabStrip_pstsIndicatorHeight
+    public static final int PagerSlidingTabStrip_pstsScrollOffset
+    public static final int PagerSlidingTabStrip_pstsShouldExpand
+    public static final int PagerSlidingTabStrip_pstsTabBackground
+    public static final int PagerSlidingTabStrip_pstsTabPaddingLeftRight
+    public static final int PagerSlidingTabStrip_pstsTextAllCaps
+    public static final int PagerSlidingTabStrip_pstsUnderlineColor
+    public static final int PagerSlidingTabStrip_pstsUnderlineHeight
+    public static final int ProgressWheel_barColor
+    public static final int ProgressWheel_barLength
+    public static final int ProgressWheel_barWidth
+    public static final int ProgressWheel_circleColor
+    public static final int ProgressWheel_delayMillis
+    public static final int ProgressWheel_radius
+    public static final int ProgressWheel_rimColor
+    public static final int ProgressWheel_rimWidth
+    public static final int ProgressWheel_spinSpeed
+    public static final int ProgressWheel_text
+    public static final int ProgressWheel_textColor
+    public static final int ProgressWheel_textSize
+    public static final int PullScrollView_header
+    public static final int PullScrollView_headerHeight
+    public static final int PullScrollView_headerVisibleHeight
+    public static final int RoundedImageView_android_scaleType
+    public static final int RoundedImageView_border_color2
+    public static final int RoundedImageView_border_width2
+    public static final int RoundedImageView_corner_radius
+    public static final int RoundedImageView_mutate_background
+    public static final int RoundedImageView_oval
+    public static final int SwipeBackLayout_edge_flag
+    public static final int SwipeBackLayout_edge_size
+    public static final int SwipeBackLayout_shadow_bottom
+    public static final int SwipeBackLayout_shadow_left
+    public static final int SwipeBackLayout_shadow_right
+    public static final int SwitchButton_bmHeight
+    public static final int SwitchButton_bmWidth
+    1212:1212:public R$styleable()
+itstudio.instructor.adapter.GuidePagerAdapter:
+    25:28:public GuidePagerAdapter(java.util.ArrayList)
+itstudio.instructor.adapter.MessageAdapter:
+    itstudio.instructor.adapter.MessageAdapter$ViewHolder holder
+itstudio.instructor.adapter.MyFansAdapter:
+    53:61:public void appendToList(java.util.List)
+itstudio.instructor.adapter.NewsListAdapter:
+    61:69:public void appendToList(java.util.List)
+    72:88:public void removeList(java.util.List)
+itstudio.instructor.adapter.NewsListAdapterNoHead:
+    private itstudio.instructor.entity.News news
+itstudio.instructor.adapter.UserListAdapter:
+    64:72:public void appendToList(java.util.List)
+itstudio.instructor.config.Config:
+    public static final java.lang.String BASE_URL
+    public static final java.lang.String BASE_URL_API
+    public static final java.lang.String IMG_URL
+    public static final java.lang.String NOTICE_URL
+    public static final java.lang.String NEWS_URL
+    public static final java.lang.String HEAD_URL
+    public static final int PAGE_NUM
+    public static final java.lang.String AC_NEWS_lIST
+    public static final java.lang.String AC_NEWS_SEND
+    public static final java.lang.String AC_NEWS_LATEST
+    public static final java.lang.String AC_NEWS_PERSON
+    public static final java.lang.String AC_NEWS_FOLLOW
+    public static final java.lang.String AC_NEWS_PIC
+    public static final java.lang.String AC_USER_HEAD
+    public static final java.lang.String AC_NOTICE_LIST
+    public static final java.lang.String AC_USER_LOGIN
+    public static final java.lang.String AC_USER_FANS
+    public static final java.lang.String AC_USER_FOLLOW
+    public static final java.lang.String AC_USER_INTRO
+    public static final java.lang.String AC_USER_EMAIL
+    public static final java.lang.String AC_USER_PASSWORD
+    public static final java.lang.String AC_COMMENT_LIST
+    public static final java.lang.String AC_COMMENT_ADD
+    public static final java.lang.String AC_FOllOW_CANCEL
+    public static final java.lang.String AC_FOLLOW_ADD
+    public static final java.lang.String AC_USER_LOGOUT
+    public static final java.lang.String AC_USER_SEEK_TEACHER
+    public static final java.lang.String AC_USER_TEACHER
+    public static final java.lang.String AC_USER_SEEK_PUB
+    public static final java.lang.String AC_USER_PUB
+    public static final java.lang.String AC_COLLECT_LIST
+    public static final java.lang.String AC_COLLECT_CANCEL
+    public static final java.lang.String AC_COLLECT_ADD
+    public static final java.lang.String AC_COMMENT_MY_REPLY
+    public static final java.lang.String AC_COMMENT_REPLY_ME
+    public static final java.lang.String AC_UPDATE
+    public static final java.lang.String AC_OPINION
+    public static final java.lang.String AC_FINDPSW
+    public static final java.lang.String LOGIN_KEY
+    public static final java.lang.String apkUrl
+    public static final java.lang.String APP_NAME
+    public static final java.lang.String IS_USE
+    public static final int TIME_DELAY_GUIDE
+    public static final int TIME_DELAY_WELCOME
+    public static final int REQUEST_LOCAL_PIC
+    public static final int REQUEST_TAKE_PHOTO
+    public static final int REQUEST_PREVIEW_PIC
+    public static final int RESULT_LOCAL_IMG
+    public static final int RESULT_PREVIEW_PIC
+    public static final java.lang.String SUCCESS
+    public static final java.lang.String FAIL
+    public static final java.lang.String LOGIN
+    public static final java.lang.String ERROR
+    12:12:public Config()
+itstudio.instructor.config.ImageOptionsUtil:
+    9:9:public ImageOptionsUtil()
+itstudio.instructor.fragment.FragmentCollect:
+    android.view.View parentView
+itstudio.instructor.fragment.FragmentDrafts:
+    android.view.View parentView
+itstudio.instructor.fragment.FragmentPub:
+    private static itstudio.instructor.fragment.FragmentTeacher singleton
+    82:85:public static itstudio.instructor.fragment.FragmentTeacher getInstance()
+itstudio.instructor.fragment.FragmentSelf:
+    301:309:public void onScrollChanged(itstudio.instructor.widget.PullScrollView,int,int,int,int)
+itstudio.instructor.http.TwitterRestClient:
+    private static final java.lang.String BASE_URL
+    19:19:public TwitterRestClient()
+    25:26:public static void get(java.lang.String,com.loopj.android.http.RequestParams,com.loopj.android.http.AsyncHttpResponseHandler)
+itstudio.instructor.image.local.NativeImageLoader:
+    61:61:public android.graphics.Bitmap loadNativeImage(java.lang.String,itstudio.instructor.image.local.NativeImageLoader$NativeImageCallBack)
+itstudio.instructor.image.local.localImageFirstActivity:
+    private static final int SCAN_OK
+itstudio.instructor.service.DatebaseHelper:
+    public static final java.lang.String NAME
+    public static final int VERSION
+itstudio.instructor.service.DatebaseService:
+    29:35:public void save(itstudio.instructor.entity.News)
+    39:48:public void saveNewsList(java.util.List)
+itstudio.instructor.service.DownloadService:
+    private static final int NOTIFY_ID
+    private static final java.lang.String savePath
+    private static final java.lang.String saveFileName
+    46:46:static synthetic boolean access$16(itstudio.instructor.service.DownloadService)
+itstudio.instructor.service.DownloadService$DownloadBinder:
+    166:166:public int getProgress()
+    174:174:public boolean serviceIsDestroy()
+itstudio.instructor.ui.AboutActivity:
+    private android.app.AlertDialog$Builder abuilder
+itstudio.instructor.ui.DraftsEditActivity:
+    java.lang.String allPath
+    android.graphics.Bitmap bitmap
+itstudio.instructor.ui.LoginActivity:
+    android.view.inputmethod.InputMethodManager inputMethodManager
+itstudio.instructor.ui.MainActivity:
+    public static float density
+    public static float xdpi
+    public static float ydpi
+    public static float screenWidth
+    public static float screenHeight
+    public static float densityDPI
+    public static int screenWidthDip
+    public static int screenHeightDip
+    131:131:public android.support.v4.widget.DrawerLayout getmDrawerLayout()
+    140:141:public void setmDrawerLayout(android.support.v4.widget.DrawerLayout)
+    299:299:static synthetic android.os.Handler access$2(itstudio.instructor.ui.MainActivity)
+itstudio.instructor.ui.MainActivity$2:
+    290:296:public void OnBackResult(java.lang.Object)
+itstudio.instructor.ui.MainActivity$ICallbackResult:
+    public abstract void OnBackResult(java.lang.Object)
+itstudio.instructor.ui.ReviseInfoActivity:
+    public static final int REQUEST_TAKE_PHOTO
+    public static final int REQUEST_LOCAL_IMG
+    public static final int RESULT_CUT_IMG
+    android.graphics.Bitmap bitmap
+itstudio.instructor.ui.UserDetailActivity:
+    359:359:public void onScrollChanged(itstudio.instructor.widget.PullScrollView,int,int,int,int)
+itstudio.instructor.util.AESCipher:
+    public static final java.lang.String key
+    private static final java.lang.String HEX
+    10:10:public AESCipher()
+    76:76:public static java.lang.String toHex(java.lang.String)
+    79:79:public static java.lang.String fromHex(java.lang.String)
+itstudio.instructor.util.BitMapUtil:
+    14:14:public BitMapUtil()
+    81:86:public static android.graphics.Bitmap PicZoom(android.graphics.Bitmap,int,int)
+itstudio.instructor.util.FileUtil:
+    12:12:public FileUtil()
+itstudio.instructor.util.FixedSpeedScroller:
+    16:18:public FixedSpeedScroller(android.content.Context,android.view.animation.Interpolator)
+itstudio.instructor.util.LoginUtil:
+    31:31:public LoginUtil()
+itstudio.instructor.util.PixelUtil:
+    13:13:public PixelUtil()
+    39:40:public static int dp2px(float,android.content.Context)
+    50:51:public static int px2dp(float)
+    62:63:public static int px2dp(float,android.content.Context)
+    74:80:public static int sp2px(float)
+    92:98:public static int sp2px(float,android.content.Context)
+    108:109:public static int px2sp(float)
+    120:121:public static int px2sp(float,android.content.Context)
+itstudio.instructor.util.SharedPreferencesUtil:
+    14:14:public SharedPreferencesUtil()
+    29:36:public static void add(android.content.Context,java.util.Map)
+    50:54:public static void deleteAll(android.content.Context)
+    60:64:public static void delete(android.content.Context,java.lang.String)
+itstudio.instructor.util.TimeUtil:
+    public static final java.lang.String FORMAT_YEAR
+    public static final java.lang.String FORMAT_MONTH_DAY
+    public static final java.lang.String FORMAT_DATE
+    public static final java.lang.String FORMAT_TIME
+    public static final java.lang.String FORMAT_MONTH_DAY_TIME
+    public static final java.lang.String FORMAT_MONTH_DAY_TIME_EN
+    public static final java.lang.String FORMAT_DATE_TIME
+    public static final java.lang.String FORMAT_DATE1_TIME
+    public static final java.lang.String FORMAT_DATE_TIME_SECOND
+    private static final int YEAR
+    private static final int MONTH
+    private static final int DAY
+    private static final int HOUR
+    private static final int MINUTE
+    10:10:public TimeUtil()
+    39:56:public static java.lang.String getDescriptionTimeFromTimestamp(long)
+    67:72:public static java.lang.String getCurrentTime(java.lang.String)
+    86:89:public static java.lang.String longToString(long,java.lang.String)
+    97:105:public static java.util.Date stringToDate(java.lang.String,java.lang.String)
+    112:115:public static java.util.Date longToDate(long,java.lang.String)
+    123:128:public static long stringToLong(java.lang.String,java.lang.String)
+    135:135:public static long dateToLong(java.util.Date)
+    139:140:public static java.lang.String getTime(long)
+    144:145:public static java.lang.String getHourAndMin(long)
+    157:181:public static java.lang.String getChatTime(long)
+itstudio.instructor.util.ToastUtil:
+    7:7:public ToastUtil()
+    10:15:public static void showAppMsg(android.app.Activity,java.lang.String,int)
+itstudio.instructor.widget.ActionSheetExit:
+    22:23:private ActionSheetExit()
+itstudio.instructor.widget.ActionSheetPic:
+    23:24:private ActionSheetPic()
+itstudio.instructor.widget.CustomDialog:
+    19:20:public CustomDialog(android.content.Context)
+itstudio.instructor.widget.CustomDialog$Builder:
+    78:79:public itstudio.instructor.widget.CustomDialog$Builder setTitle(java.lang.String)
+    90:91:public itstudio.instructor.widget.CustomDialog$Builder setContentView(android.view.View)
+    115:117:public itstudio.instructor.widget.CustomDialog$Builder setPositiveButton(java.lang.String,android.content.DialogInterface$OnClickListener)
+    141:143:public itstudio.instructor.widget.CustomDialog$Builder setNegativeButton(java.lang.String,android.content.DialogInterface$OnClickListener)
+    154:156:public itstudio.instructor.widget.CustomDialog$Builder setNeutralButton(int,android.content.DialogInterface$OnClickListener)
+    167:169:public itstudio.instructor.widget.CustomDialog$Builder setNeutralButton(java.lang.String,android.content.DialogInterface$OnClickListener)
+itstudio.instructor.widget.CustomScrollView:
+    private static final int LEN
+    private static final int DURATION
+    private static final int MAX_DY
+itstudio.instructor.widget.CustomScrollView$TouchTool:
+    120:121:public int getScrollX(float)
+itstudio.instructor.widget.PagerSlidingTabStrip:
+    174:175:public void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+    394:396:public void setIndicatorColorResource(int)
+    399:399:public int getIndicatorColor()
+    408:408:public int getIndicatorHeight()
+    412:414:public void setUnderlineColor(int)
+    417:419:public void setUnderlineColorResource(int)
+    422:422:public int getUnderlineColor()
+    426:428:public void setDividerColor(int)
+    431:433:public void setDividerColorResource(int)
+    436:436:public int getDividerColor()
+    440:442:public void setUnderlineHeight(int)
+    445:445:public int getUnderlineHeight()
+    449:451:public void setDividerPadding(int)
+    454:454:public int getDividerPadding()
+    458:460:public void setScrollOffset(int)
+    463:463:public int getScrollOffset()
+    472:472:public boolean getShouldExpand()
+    476:476:public boolean isTextAllCaps()
+    480:481:public void setAllCaps(boolean)
+    484:486:public void setTextSize(int)
+    489:489:public int getTextSize()
+    493:495:public void setTextColor(int)
+    498:500:public void setTextColorResource(int)
+    503:503:public int getTextColor()
+    513:514:public void setTabBackground(int)
+    517:517:public int getTabBackground()
+    521:523:public void setTabPaddingLeftRight(int)
+    526:526:public int getTabPaddingLeftRight()
+itstudio.instructor.widget.ProgressWheel:
+    245:248:public void resetCount()
+    254:257:public void stopSpinning()
+    264:266:public void spin()
+    272:276:public void incrementProgress()
+    302:302:public int getCircleRadius()
+    306:307:public void setCircleRadius(int)
+    310:310:public int getBarLength()
+    314:315:public void setBarLength(int)
+    318:318:public int getBarWidth()
+    322:323:public void setBarWidth(int)
+    326:326:public int getTextSize()
+    330:331:public void setTextSize(int)
+    338:339:public void setPaddingTop(int)
+    346:347:public void setPaddingBottom(int)
+    354:355:public void setPaddingLeft(int)
+    362:363:public void setPaddingRight(int)
+    366:366:public int getBarColor()
+    370:371:public void setBarColor(int)
+    374:374:public int getCircleColor()
+    378:379:public void setCircleColor(int)
+    382:382:public int getRimColor()
+    386:387:public void setRimColor(int)
+    391:391:public android.graphics.Shader getRimShader()
+    395:396:public void setRimShader(android.graphics.Shader)
+    399:399:public int getTextColor()
+    403:404:public void setTextColor(int)
+    407:407:public int getSpinSpeed()
+    411:412:public void setSpinSpeed(int)
+    415:415:public int getRimWidth()
+    419:420:public void setRimWidth(int)
+    423:423:public int getDelayMillis()
+    427:428:public void setDelayMillis(int)
+itstudio.instructor.widget.PullScrollView:
+    private static final float SCROLL_RATIO
+    private static final int TURN_DISTANCE
+    298:299:public void setScrollViewListener(itstudio.instructor.widget.PullScrollView$ScrollViewListener)
+itstudio.instructor.widget.PullScrollView$OnTurnListener:
+    public abstract void onScrollChanged(itstudio.instructor.widget.PullScrollView,int,int,int,int)
+itstudio.instructor.widget.StretchScrollView:
+    private static final int MSG_REST_POSITION
+    private static final int MAX_SCROLL_HEIGHT
+    private static final float SCROLL_RATIO
+itstudio.instructor.widget.UISwitchButton:
+    private static final int MSG_ANIMATE
+    public static final int ANIMATION_FRAME_DURATION
+    194:195:void setOnCheckedChangeWidgetListener(android.widget.CompoundButton$OnCheckedChangeListener)
+itstudio.instructor.xlistview.SlideListView:
+    private static final int SCROLLBACK_HEADER
+    private static final int SCROLLBACK_FOOTER
+    private static final int SCROLL_DURATION
+    private static final int PULL_LOAD_MORE_DELTA
+    private static final float OFFSET_RADIO
+    68:70:public SlideListView(android.content.Context)
+    128:134:public void setPullRefreshEnable(boolean)
+    142:158:public void setPullLoadEnable(boolean)
+    164:168:public void stopRefresh()
+    174:178:public void stopLoadMore()
+    186:187:public void setRefreshTime(java.lang.String)
+    356:357:public void setXListViewListener(itstudio.instructor.xlistview.SlideListView$IXListViewListener)
+    257:257:static synthetic void access$2(itstudio.instructor.xlistview.SlideListView)
+itstudio.instructor.xlistview.SlideListView$2
+itstudio.instructor.xlistview.XListView:
+    private static final int SCROLLBACK_HEADER
+    private static final int SCROLLBACK_FOOTER
+    private static final int SCROLL_DURATION
+    private static final int PULL_LOAD_MORE_DELTA
+    private static final float OFFSET_RADIO
+    191:192:public void setRefreshTime(int)
+itstudio.instructor.xlistview.XListViewFooter:
+    public static final int STATE_NORMAL
+    public static final int STATE_READY
+    public static final int STATE_LOADING
+    71:73:public void normal()
+    80:82:public void loading()
+itstudio.instructor.xlistview.XListViewHeader:
+    public static final int STATE_NORMAL
+    public static final int STATE_READY
+    public static final int STATE_REFRESHING
+m.framework.ui.widget.asyncview.AsyncImageView:
+    public static final int DEFAULT_TRANSPARENT
+    private static final int MSG_IMG_GOT
+m.framework.ui.widget.asyncview.AsyncView:
+    public abstract void execute(java.lang.String,int)
+m.framework.ui.widget.asyncview.BitmapProcessor:
+    private static final int CAPACITY
+    private static final int MAX_REQ_TIME
+    private static final int MAX_SIZE
+    private static final int OVERFLOW_SIZE
+    52:62:public static void stop()
+m.framework.ui.widget.pulltorefresh.GroupListView:
+    14:15:public GroupListView(android.content.Context)
+    26:112:public void setAdapter(m.framework.ui.widget.pulltorefresh.GroupListView$GroupListAdapter)
+m.framework.ui.widget.pulltorefresh.GroupListView$1
+m.framework.ui.widget.pulltorefresh.GroupListView$GroupListAdapter
+m.framework.ui.widget.pulltorefresh.GroupListView$ItemHolder
+m.framework.ui.widget.pulltorefresh.PullToRefreshGridAdapter
+m.framework.ui.widget.pulltorefresh.PullToRefreshGridAdapter$1
+m.framework.ui.widget.pulltorefresh.PullToRefreshGroupListAdapter
+m.framework.ui.widget.pulltorefresh.PullToRefreshGroupListAdapter$1
+m.framework.ui.widget.pulltorefresh.PullToRefreshGroupListAdapter$2
+m.framework.ui.widget.pulltorefresh.PullToRefreshView:
+    private static final long MIN_REF_TIME
+    182:183:public void lockPulling()
+    187:188:public void releaseLock()
+m.framework.ui.widget.pulltorefresh.ScrollableGridView:
+    13:15:public ScrollableGridView(android.content.Context)
+    47:47:public boolean isReadyToPull()
+m.framework.ui.widget.pulltorefresh.ScrollableGroupListView:
+    12:14:public ScrollableGroupListView(android.content.Context)
+    38:38:public boolean isReadyToPull()
+m.framework.ui.widget.slidingmenu.BodyContainer:
+    private static final int MIN_FLING_VEL
+    private static final int MENU_COVER_ALPHA
+m.framework.ui.widget.slidingmenu.MenuAdapter:
+    private java.util.ArrayList menus
+    15:17:public MenuAdapter(m.framework.ui.widget.slidingmenu.SlidingMenu)
+    20:34:private m.framework.ui.widget.slidingmenu.SlidingMenuGroup findGroupById(int)
+    38:45:public void setGroup(int,java.lang.String)
+    48:61:void setGroup(m.framework.ui.widget.slidingmenu.SlidingMenuGroup)
+    64:74:public void setItem(int,m.framework.ui.widget.slidingmenu.SlidingMenuItem)
+    77:77:public android.view.View getMenuTitle()
+    81:81:int getGroupCount()
+    85:85:m.framework.ui.widget.slidingmenu.SlidingMenuGroup getGroup(int)
+    89:89:protected java.lang.String getTitle(int)
+    public abstract android.view.View getGroupView(int,android.view.ViewGroup)
+    95:95:protected m.framework.ui.widget.slidingmenu.SlidingMenuItem getItem(int,int)
+    public abstract android.view.View getItemView(m.framework.ui.widget.slidingmenu.SlidingMenuItem,android.view.ViewGroup)
+    102:102:public void notifyDataSetChanged(m.framework.ui.widget.slidingmenu.SlidingMenuItem)
+    113:118:public m.framework.ui.widget.slidingmenu.SlidingMenuItem getMenuItem(int,int)
+m.framework.ui.widget.slidingmenu.MenuConfig:
+    int paddingLeft
+    int paddingTop
+    int paddingRight
+    int paddingBottom
+    int menuSep
+m.framework.ui.widget.slidingmenu.SlidingMenu:
+    private android.view.View curBody
+    43:45:public SlidingMenu(android.content.Context)
+    212:214:public void setAdapter(m.framework.ui.widget.slidingmenu.MenuAdapter)
+    217:221:public void refresh()
+    224:231:private void reInit(android.content.Context)
+    234:254:private void reInitMenu(android.content.Context)
+    257:293:private void reInitBody(android.content.Context)
+    296:303:public void setBodyView(android.view.View)
+    306:306:public android.view.View getBodyView()
+    310:338:private void invalidateMenu()
+    341:345:private android.view.View getSepView(android.content.Context)
+    350:356:public void switchMenu()
+    395:397:public void setMenuItemBackground(int,int)
+    400:401:public void setMenuWeight(float)
+    404:405:public void setMenuBackground(int)
+    408:412:public void setMenuPadding(int,int,int,int)
+    415:416:public void setTtleHeight(int)
+    419:420:public void setShadowRes(int)
+    423:424:public void setBodyBackground(int)
+    427:428:public void setMenuDivider(int)
+    446:446:android.view.View itemToView(m.framework.ui.widget.slidingmenu.SlidingMenuItem)
+    450:458:public void triggerItem(int,int)
+    461:468:public void triggerItem(m.framework.ui.widget.slidingmenu.SlidingMenuItem)
+    38:38:static synthetic m.framework.ui.widget.slidingmenu.BodyContainer access$3(m.framework.ui.widget.slidingmenu.SlidingMenu)
+    32:32:static synthetic int access$4(m.framework.ui.widget.slidingmenu.SlidingMenu)
+m.framework.ui.widget.slidingmenu.SlidingMenu$6
+m.framework.ui.widget.slidingmenu.SlidingMenu$6$1
+m.framework.ui.widget.slidingmenu.SlidingMenuGroup
+m.framework.ui.widget.slidingmenu.SlidingMenuItem:
+    public int group
+    public int id
+    public java.lang.Object body
+m.framework.ui.widget.viewpager.ViewPagerClassic:
+    private static final int SNAP_VELOCITY
+    private static final int TOUCH_STATE_REST
+    private static final int TOUCH_STATE_SCROLLING
+    454:461:public void scrollLeft()
+    465:473:public void scrollRight()
+m.framework.utils.Data:
+    private static final java.lang.String CHAT_SET
+    10:10:public Data()
+    15:18:public static byte[] SHA1(java.lang.String)
+    29:42:public static byte[] AES128Encode(java.lang.String,java.lang.String)
+    54:63:public static byte[] AES128Encode(byte[],java.lang.String)
+    68:70:public static java.lang.String AES128Decode(java.lang.String,byte[])
+    74:85:public static byte[] AES128Decode(byte[],byte[])
+    97:97:public static java.util.HashMap parseJson(java.lang.String)
+    101:101:public static java.lang.String parseJson(java.util.HashMap)
+    105:111:public static java.lang.String base62(long)
+    145:146:public static java.lang.String urlEncode(java.lang.String,java.lang.String)
+m.framework.utils.DeviceHelper:
+    private static m.framework.utils.DeviceHelper deviceHelper
+    43:46:public static m.framework.utils.DeviceHelper getInstance(android.content.Context)
+    64:64:public boolean isRooted()
+    68:78:public java.lang.String getMacAddress()
+    83:83:public java.lang.String getModel()
+    88:88:public java.lang.String getFactory()
+    93:117:public java.lang.String getDeviceId()
+    122:124:public java.lang.String getDeviceData()
+    135:145:public java.lang.String Base64AES(java.lang.String,java.lang.String)
+    150:150:public java.lang.String getOSVersion()
+    155:161:public java.lang.String getScreenSize()
+    176:181:public java.lang.String getCarrier()
+    186:213:public java.lang.String getNetworkType()
+    218:218:public int getPlatformCode()
+    222:262:private boolean isFastMobileNetwork()
+    266:283:public org.json.JSONArray getRunningApp()
+    287:295:public java.lang.String getRunningAppStr()
+    300:309:public java.lang.String getDeviceKey()
+    319:329:public java.lang.String getAppName()
+    335:341:public int getAppVersion()
+    347:353:public java.lang.String getAppVersionName()
+    359:377:public java.util.ArrayList getInstalledApp(boolean)
+    381:383:private boolean isSystemApp(android.content.pm.PackageInfo)
+    387:389:public java.lang.String getNetworkOperator()
+    394:401:public java.lang.String getTopTaskPackageName()
+m.framework.utils.HEX:
+    3:3:public HEX()
+    15:30:public static byte[] toByte(java.lang.String)
+    34:35:public static java.lang.String encodeHexString(byte[])
+    39:39:public static byte[] decodeHexString(java.lang.String)
+    43:60:public static byte[] decodeHex(char[])
+    64:68:protected static int toDigit(char,int)
+    72:82:public static char[] encodeHex(byte[])
+    86:86:public byte[] decode(byte[])
+    91:95:public byte[] decode(java.lang.Object)
+    100:100:public byte[] encode(byte[])
+    105:109:public char[] encode(java.lang.Object)
+m.framework.utils.Hashon:
+    21:30:public java.util.HashMap fromJson(java.lang.String)
+    35:54:private java.util.HashMap fromJson(org.json.JSONObject)
+    59:70:private java.util.ArrayList fromJson(org.json.JSONArray)
+    76:80:public java.lang.String fromHashMap(java.util.HashMap)
+    86:100:private org.json.JSONObject getJSONObject(java.util.HashMap)
+    104:104:private boolean isBasicArray(java.lang.Object)
+    112:175:private java.util.ArrayList arrayToList(java.lang.Object)
+    181:191:private org.json.JSONArray getJSONArray(java.util.ArrayList)
+    197:201:public java.lang.String format(java.lang.String)
+    206:231:private java.lang.String format(java.lang.String,java.util.HashMap)
+    236:260:private java.lang.String format(java.lang.String,java.util.ArrayList)
+m.framework.utils.UIHandler:
+    13:13:public UIHandler()
+    43:45:private static android.os.Message getShellMessage(int,android.os.Handler$Callback)
+    49:49:public static boolean sendMessage(android.os.Message,android.os.Handler$Callback)
+    57:57:public static boolean sendMessageAtTime(android.os.Message,long,android.os.Handler$Callback)
+    61:61:public static boolean sendMessageAtFrontOfQueue(android.os.Message,android.os.Handler$Callback)
+    65:65:public static boolean sendEmptyMessage(int,android.os.Handler$Callback)
+    69:69:public static boolean sendEmptyMessageAtTime(int,long,android.os.Handler$Callback)
+    73:73:public static boolean sendEmptyMessageDelayed(int,long,android.os.Handler$Callback)
+m.framework.utils.Utils:
+    private static float density
+    18:18:public Utils()
+    23:26:public static int dipToPx(android.content.Context,int)
+    128:128:public static int getScreenHeight(android.content.Context)
+me.storm.ninegag.view.swipeback.ImageViewActivity:
+    public static final java.lang.String IMAGE_URL
+me.storm.ninegag.view.swipeback.SwipeBackActivity:
+    28:28:public me.storm.ninegag.view.swipeback.SwipeBackLayout getSwipeBackLayout()
+    33:34:public void setSwipeBackEnable(boolean)
+    38:39:public void scrollToFinishActivity()
+me.storm.ninegag.view.swipeback.SwipeBackActivityBase
+me.storm.ninegag.view.swipeback.SwipeBackActivityHelper:
+    59:62:public android.view.View findViewById(int)
+    66:66:public me.storm.ninegag.view.swipeback.SwipeBackLayout getSwipeBackLayout()
+me.storm.ninegag.view.swipeback.SwipeBackLayout:
+    private static final int MIN_FLING_VELOCITY
+    private static final int DEFAULT_SCRIM_COLOR
+    private static final int FULL_ALPHA
+    public static final int EDGE_LEFT
+    public static final int EDGE_RIGHT
+    public static final int EDGE_BOTTOM
+    public static final int EDGE_ALL
+    public static final int STATE_IDLE
+    public static final int STATE_DRAGGING
+    public static final int STATE_SETTLING
+    private static final float DEFAULT_SCROLL_THRESHOLD
+    private static final int OVERSCROLL_DISTANCE
+    173:174:public void setSensitivity(android.content.Context,float)
+    186:187:public void setEnableGesture(boolean)
+    215:217:public void setScrimColor(int)
+    239:240:public void setSwipeListener(me.storm.ninegag.view.swipeback.SwipeBackLayout$SwipeListener)
+    260:264:public void removeSwipeListener(me.storm.ninegag.view.swipeback.SwipeBackLayout$SwipeListener)
+    301:305:public void setScrollThresHold(float)
+    344:361:public void scrollToFinishActivity()
+me.storm.ninegag.view.swipeback.ViewDragHelper:
+    private static final java.lang.String TAG
+    public static final int INVALID_POINTER
+    public static final int STATE_IDLE
+    public static final int STATE_DRAGGING
+    public static final int STATE_SETTLING
+    public static final int EDGE_LEFT
+    public static final int EDGE_RIGHT
+    public static final int EDGE_TOP
+    public static final int EDGE_BOTTOM
+    public static final int EDGE_ALL
+    public static final int DIRECTION_HORIZONTAL
+    public static final int DIRECTION_VERTICAL
+    public static final int DIRECTION_ALL
+    public static final int EDGE_SIZE
+    private static final int BASE_SETTLE_DURATION
+    private static final int MAX_SETTLE_DURATION
+    394:396:public static me.storm.ninegag.view.swipeback.ViewDragHelper create(android.view.ViewGroup,float,me.storm.ninegag.view.swipeback.ViewDragHelper$Callback)
+    436:439:public void setSensitivity(android.content.Context,float)
+    461:461:public float getMinVelocity()
+    502:502:public int getEdgeSize()
+    543:543:public android.view.View getCapturedView()
+    551:551:public int getActivePointerId()
+    559:559:public int getTouchSlop()
+    582:592:public void abort()
+    613:616:public boolean smoothSlideViewTo(android.view.View,int,int)
+    771:782:public void flingCapturedView(int,int,int,int)
+    994:1016:protected boolean canScroll(android.view.View,boolean,int,int,int,int)
+    1379:1385:public boolean checkTouchSlop(int)
+    1407:1424:public boolean checkTouchSlop(int,int)
+    1439:1445:public boolean isEdgeTouched(int)

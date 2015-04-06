@@ -1,0 +1,32 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/main_title"
+        android:focusable="true" />
+    
+    <android.support.v4.widget.DrawerLayout 
+	    
+	    android:id="@+id/content_drawer"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    <FrameLayout
+	        android:id="@+id/content_frame"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" >
+	    </FrameLayout>
+	    <FrameLayout
+	        android:id="@+id/left_drawer"
+	        android:layout_width="250dp"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="start"
+	        android:background="@color/white" >
+	    </FrameLayout>
+	</android.support.v4.widget.DrawerLayout>
+    
+</LinearLayout>

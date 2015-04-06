@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<example.swm.app.widget.CustomScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/personal_scrollView"
+    
+    
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- 此处必须设置imageview的scaleType为centerCrop,当然在代码中设置也可以 -->
+
+        <ImageView
+            android:id="@+id/personal_background_image"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person_bj_pic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="-160dip"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <example.swm.app.widget.RoundedImageView
+                android:id="@+id/headImageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20.0dp"
+                android:adjustViewBounds="true"
+                android:maxHeight="80dip"
+                android:maxWidth="80dip"
+                android:src="@drawable/head_default_local" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60.0dp"
+                android:layout_marginLeft="10dp"
+                android:text="Ivy"
+                android:textColor="@color/white"
+                android:textSize="@dimen/xlarge_text_size" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/menu_layout_home"
+            layout="@layout/menu_home" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="68dp"
+            android:background="@color/toolbox_line" />
+
+        <include
+            android:id="@+id/menu_layout_mygroup"
+            layout="@layout/menu_my_group" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="68dip"
+            android:background="@color/toolbox_line" />
+
+        <include
+            android:id="@+id/menu_layout_notification"
+            layout="@layout/menu_notifition" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="68dp"
+            android:background="@color/toolbox_line" />
+        <include
+            android:id="@+id/menu_layout_schedule"
+            layout="@layout/menu_schedule" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="68dp"
+            android:background="@color/toolbox_line" />
+        <include
+            android:id="@+id/menu_layout_freerooms"
+            layout="@layout/menu_freeroom" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="68dp"
+            android:background="@color/toolbox_line" />
+        <include
+            android:id="@+id/menu_layout_settings"
+            layout="@layout/menu_settings" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="68dp"
+            android:background="@color/toolbox_line" />
+
+       
+        
+    </LinearLayout>
+
+</example.swm.app.widget.CustomScrollView>

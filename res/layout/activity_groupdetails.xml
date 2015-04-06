@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/group_detail_top"
+        layout="@layout/title_back" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/group_admin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+
+        <TextView
+            android:id="@+id/group_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ivy"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+
+        <RatingBar
+            android:layout_marginLeft="10dp"
+            android:id="@+id/cater_ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:progressDrawable="@drawable/my_ratingbar"
+            android:rating="4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/group_room"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/group_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/group_time"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+
+        <TextView
+            android:id="@+id/group_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09:00-10:00"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/group_date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/group_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03-13-2015"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Num:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/group_people_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Applicants:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/group_applicants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+       
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/group_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We are instereed in Css, you can join us. Come on!"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+    </LinearLayout>
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/group_btn_members"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector"
+            android:text="Members"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/xlarge_text_size" />
+
+        <Button
+            android:id="@+id/group_btn_join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector"
+            android:text="Join"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textSize="@dimen/xlarge_text_size" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_wordflow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include
+            android:id="@+id/search_layout"
+            android:layout_alignParentTop="true"
+            layout="@layout/search_layout" />
+
+        <example.swm.app.widget.KeywordsFlow
+            android:id="@+id/keywordsflow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/search_layout" />
+    </RelativeLayout>
+
+    <include layout="@layout/loading_layout" />
+
+    <include layout="@layout/load_fail_layout" />
+
+</FrameLayout>

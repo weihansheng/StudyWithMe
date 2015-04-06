@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/toolbox_item_height"
+    android:background="@drawable/tool_box_fragment_selector" >
+
+    <ImageView
+        android:id="@+id/notification_indicator"
+        style="@style/toolbox_indicator"
+        android:src="@drawable/tool_box_home_selector" />
+
+    <TextView
+        android:id="@+id/toolbox_title"
+        style="@style/toolbox_textview"
+        android:layout_toRightOf="@id/notification_indicator"
+        android:text="@string/menu_schedule" />
+
+</RelativeLayout>
