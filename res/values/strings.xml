@@ -2,12 +2,20 @@
 <resources>
     
 
+    
     <string name="app_name">StudyWithMe</string>
+    
+    
     <string name="group_admin">Admin:</string>
     <string name="group_room">Room:</string>
     <string name="group_time">Time:</string>
     <string name="group_date">Date:</string>
     <string name="implemeting">Implementing</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="university">University</string>
+    <string name="major">Major</string>
 
     <!-- login -->
     <string name="start">马上体验</string>
@@ -94,7 +102,7 @@
     <string name="cleanCache">清除缓存</string>
     <string name="share">分 享</string>
     <string name="delete">删除</string>
-    <string name="none_collect">暂无收藏</string>
+    <string name="none_groups">暂无小组</string>
     <string name="none_follow">暂无关注</string>
     <string name="none_drafts">暂无草稿</string>
     <string name="none_fans">暂无粉丝</string>

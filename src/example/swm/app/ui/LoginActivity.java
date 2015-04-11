@@ -39,6 +39,9 @@ public class LoginActivity extends Activity {
 	private Button loginBtn;
 	private View losspsw;
 	private View losspsw_underline;
+	private LinearLayout signup_layout;
+	private View signup;
+	private View signup_underline;
 	private View cancel;
 	private View cansel_underline;
 	
@@ -53,6 +56,7 @@ public class LoginActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
+		MyApplication.getInstance().addActivity(this); //把Activity添加到栈中
 
 		findById();
 		setOnclick();
@@ -65,6 +69,9 @@ public class LoginActivity extends Activity {
 		user_psw = (EditText) findViewById(R.id.user_password);
 		losspsw = findViewById(R.id.loss_password);
 		losspsw_underline=findViewById(R.id.loss_password_underline);
+		signup=findViewById(R.id.signup);
+		signup_underline=findViewById(R.id.signup_underline);
+		signup_layout=(LinearLayout) findViewById(R.id.signup_layout);
 		loginBtn = (Button) findViewById(R.id.login_btn);
 		login_back=findViewById(R.id.login_back_layout);
 		cansel_underline=findViewById(R.id.cancle_underline);
@@ -75,6 +82,7 @@ public class LoginActivity extends Activity {
 		// TODO Auto-generated method stub
 		clickListener myListener = new clickListener();
 		losspsw.setOnClickListener(myListener);
+		signup_layout.setOnClickListener(myListener);
 		loginBtn.setOnClickListener(myListener);
 		login_back.setOnClickListener(myListener);
 		
@@ -83,14 +91,17 @@ public class LoginActivity extends Activity {
 
 	private void initView() {
 		// TODO Auto-generated method stub
-		int losspsw_w = View.MeasureSpec.makeMeasureSpec(0,View.MeasureSpec.UNSPECIFIED); 
-		int losspsw_h = View.MeasureSpec.makeMeasureSpec(0,View.MeasureSpec.UNSPECIFIED); 
-		losspsw.measure(losspsw_w, losspsw_h); 
-		login_back.measure(losspsw_w, losspsw_h);
+		int w = View.MeasureSpec.makeMeasureSpec(0,View.MeasureSpec.UNSPECIFIED); 
+		int h = View.MeasureSpec.makeMeasureSpec(0,View.MeasureSpec.UNSPECIFIED); 
+		losspsw.measure(w, h); 
+		login_back.measure(w, h);
+		signup.measure(w, h);
 		int losspsw_width=losspsw.getMeasuredWidth();
+		int sign_width=signup.getMeasuredWidth();
 		int cancel_width=login_back.getMeasuredWidth();
 		losspsw_underline.setLayoutParams(new  LinearLayout.LayoutParams(losspsw_width, PixelUtil.dp2px(1)));
 		cansel_underline.setLayoutParams(new  LinearLayout.LayoutParams(cancel_width, PixelUtil.dp2px(1)));
+		signup_underline.setLayoutParams(new  LinearLayout.LayoutParams(sign_width, PixelUtil.dp2px(1)));
 		
 
 	}
@@ -112,6 +123,10 @@ public class LoginActivity extends Activity {
 				loginBtn.setText(R.string.login_ing);
 				intent.setClass(LoginActivity.this, MainActivity.class);
 				//login();
+				startActivity(intent);
+				break;
+			case R.id.signup_layout:
+				intent.setClass(LoginActivity.this, RegisterActivity.class);
 				startActivity(intent);
 				break;
 			default:

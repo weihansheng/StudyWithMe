@@ -3,7 +3,7 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <item 
         android:state_selected="true" 
-        android:drawable="@drawable/icon_home_pressed" />
+        android:drawable="@drawable/icon_home_presssed" />
     <item 
         android:state_selected="false" 
         android:state_pressed="false" 

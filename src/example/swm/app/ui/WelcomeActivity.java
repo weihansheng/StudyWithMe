@@ -18,7 +18,7 @@ public class WelcomeActivity extends Activity {
     
 	public Context mContext;
 	//程序是否使用过
-	private boolean isUse;
+	private boolean isUse=true;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class WelcomeActivity extends Activity {
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_welcome);
 		mContext = WelcomeActivity.this;
-		isUse = SharedPreferencesUtil.readIsFirstUse(mContext);
+		//isUse = SharedPreferencesUtil.readIsFirstUse(mContext);
 		if (!isUse) {
 			new Handler().postDelayed(new Runnable() {
 
@@ -51,7 +51,7 @@ public class WelcomeActivity extends Activity {
                      */
 					//openActivity(YixinMainActivity.class);
 					Intent intent = new Intent();
-					intent.setClass(WelcomeActivity.this,MainActivity.class);
+					intent.setClass(WelcomeActivity.this,LoginActivity.class);
 					startActivity(intent);
 					finish();
 				}

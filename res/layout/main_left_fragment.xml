@@ -66,15 +66,6 @@
             android:id="@+id/menu_layout_mygroup"
             layout="@layout/menu_my_group" />
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="0.5dp"
-            android:layout_marginLeft="68dip"
-            android:background="@color/toolbox_line" />
-
-        <include
-            android:id="@+id/menu_layout_notification"
-            layout="@layout/menu_notifition" />
 
         <View
             android:layout_width="fill_parent"

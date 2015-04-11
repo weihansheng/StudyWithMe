@@ -69,7 +69,7 @@ public class FragmentMyGroup extends Fragment{
 		mactivity = this;
 		context = inflater.getContext();
 
-		rootView = inflater.inflate(R.layout.fragment_freeroom, container, false);
+		rootView = inflater.inflate(R.layout.fragment_mygroups, container, false);
 		//initView(rootView);
 
 		return rootView;

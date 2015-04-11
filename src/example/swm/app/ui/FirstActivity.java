@@ -55,8 +55,9 @@ public class FirstActivity extends Activity implements OnClickListener {
 			startActivity(intent);
 			break;
 		case R.id.btn_signup:
-			ToastUtil.showErrorMsg(this, R.string.implemeting);
-			
+			//ToastUtil.showErrorMsg(this, R.string.implemeting);
+			intent.setClass(getApplicationContext(), RegisterActivity.class);
+			startActivity(intent);
 			break;
 
 		default:

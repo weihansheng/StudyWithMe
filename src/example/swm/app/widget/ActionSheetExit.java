@@ -1,6 +1,7 @@
 package example.swm.app.widget;
 
 import example.swm.app.R;
+import example.swm.app.config.MyApplication;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface.OnCancelListener;
@@ -34,16 +35,17 @@ public class ActionSheetExit {
 		layout.setMinimumWidth(cFullFillWidth);
 
 
-		TextView mContent = (TextView) layout.findViewById(R.id.exit);
+		TextView mExit = (TextView) layout.findViewById(R.id.exit);
 		TextView mCancel = (TextView) layout.findViewById(R.id.cancle);
 
-		mContent.setOnClickListener(new OnClickListener() {
+		mExit.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				actionSheetSelected.onClick(0);
 				dlg.dismiss();
+				MyApplication.getInstance().exit();// 退出所有Activity
 			}
 		});
 

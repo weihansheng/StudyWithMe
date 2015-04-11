@@ -9,6 +9,7 @@ import example.swm.app.config.MyApplication;
 import example.swm.app.entity.User;
 import example.swm.app.ui.LoginActivity;
 import example.swm.app.ui.MainActivity;
+import example.swm.app.ui.UserInfoActivity;
 import example.swm.app.widget.CustomScrollView;
 import example.swm.app.R;
 import android.content.Intent;
@@ -40,7 +41,7 @@ public class LeftDrawerFragment extends Fragment {
 	private View menuMyGroup;
 	private View menuSchedule;
 	private View menuSettings;
-	private View menuNotification;
+	//private View menuNotification;
 	private View menuFreeRomm;
 	private ImageView new_message_iv;
 
@@ -111,7 +112,6 @@ public class LeftDrawerFragment extends Fragment {
 		menuHome = (RelativeLayout) rootView
 				.findViewById(R.id.menu_layout_home);
 		menuMyGroup = rootView.findViewById(R.id.menu_layout_mygroup);
-		menuNotification = rootView.findViewById(R.id.menu_layout_notification);
 		menuSchedule = rootView.findViewById(R.id.menu_layout_schedule);
 		menuFreeRomm = rootView.findViewById(R.id.menu_layout_freerooms);
 		menuSettings = rootView.findViewById(R.id.menu_layout_settings);
@@ -156,7 +156,7 @@ public class LeftDrawerFragment extends Fragment {
 		MyOClick click = new MyOClick();
 		menuHome.setOnClickListener(click);
 		menuMyGroup.setOnClickListener(click);
-		menuNotification.setOnClickListener(click);
+		//menuNotification.setOnClickListener(click);
 		menuFreeRomm.setOnClickListener(click);
 		menuSchedule.setOnClickListener(click);
 		menuSettings.setOnClickListener(click);
@@ -193,7 +193,7 @@ public class LeftDrawerFragment extends Fragment {
 				currentView.setSelected(true);
 				break;
 
-			case R.id.menu_layout_notification:
+			/*case R.id.menu_layout_notification:
 
 				if (currentView != menuNotification) {
 					newContent = new FragmentNotifition();
@@ -202,7 +202,7 @@ public class LeftDrawerFragment extends Fragment {
 				currentView.setSelected(false);
 				currentView = menuNotification;
 				currentView.setSelected(true);
-				break;
+				break;*/
 			case R.id.menu_layout_schedule:
 
 				if (currentView != menuSchedule) {
@@ -235,9 +235,13 @@ public class LeftDrawerFragment extends Fragment {
 				break;
 
 			case R.id.headImageView:
-				if (MyApplication.user == null) {
+				intent.setClass(getActivity(), UserInfoActivity.class);
+				startActivity(intent);
+				//delayFragmentSelf();
+				
+				/*if (MyApplication.user == null) {
 
-					//delayLoginActivity();
+					delayLoginActivity();
 
 				} else {
 					// userActivity();
@@ -252,7 +256,7 @@ public class LeftDrawerFragment extends Fragment {
 						break;
 					}
 
-				}
+				}*/
 				break;
 
 			default:
@@ -293,7 +297,8 @@ public class LeftDrawerFragment extends Fragment {
 				// TODO Auto-generated method stub
 				newContent = new FragmentSelf();
 				switchFragment(newContent);
-				titleTv.setText(MyApplication.user.getName());
+				//titleTv.setText(MyApplication.user.getName());
+				titleTv.setText("User");
 				currentView.setSelected(false);
 				currentView = headImageView;
 				currentView.setSelected(true);

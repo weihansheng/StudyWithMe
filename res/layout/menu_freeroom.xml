@@ -7,7 +7,7 @@
     <ImageView
         android:id="@+id/notification_indicator"
         style="@style/toolbox_indicator"
-        android:src="@drawable/tool_box_home_selector" />
+        android:src="@drawable/tool_box_freeroom_selector" />
 
     <TextView
         android:id="@+id/toolbox_title"
