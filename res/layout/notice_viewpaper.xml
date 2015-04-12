@@ -4,7 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content" >
 
-    <example.swm.app.widget.ChildViewPager
+    <com.app.swm.widget.ChildViewPager
         android:id="@+id/notice_vp"
         android:layout_width="fill_parent"
         android:layout_height="190dip" />

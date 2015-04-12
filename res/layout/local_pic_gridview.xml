@@ -59,7 +59,7 @@
                 android:textSize="@dimen/large_text_size" />
         </RelativeLayout>
 
-        <example.swm.app.widget.StretchScrollView
+        <com.app.swm.widget.StretchScrollView
             android:id="@+id/scroll_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -87,7 +87,7 @@
                     android:verticalSpacing="20dip" >
                 </GridView>
             </LinearLayout>
-        </example.swm.app.widget.StretchScrollView>
+        </com.app.swm.widget.StretchScrollView>
     </LinearLayout>
 
 </RelativeLayout>

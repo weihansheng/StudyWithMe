@@ -12,7 +12,7 @@
         android:background="#f0f0f0"
         android:orientation="vertical" >
         
-        <example.swm.app.xlistview.XListView
+        <com.app.swm.xlistview.XListView
         android:id="@+id/list_project"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -6,7 +6,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import example.swm.app.R;
+import com.app.swm.R;
 
 import java.lang.reflect.Method;
 

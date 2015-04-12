@@ -14,7 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import example.swm.app.R;
+import com.app.swm.R;
 
 import java.util.ArrayList;
 import java.util.List;

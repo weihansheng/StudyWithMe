@@ -39,7 +39,8 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.WeakHashMap;
 
-import example.swm.app.util.PixelUtil;
+import com.app.swm.util.PixelUtil;
+
 
 import static android.app.Application.ActivityLifecycleCallbacks;
 import static android.os.Build.VERSION.SDK_INT;

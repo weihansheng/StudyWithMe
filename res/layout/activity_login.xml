@@ -54,6 +54,8 @@
             android:layout_height="wrap_content"
             android:background="@null"
             android:hint="Password"
+            android:singleLine="true"
+            android:password="true"
             android:textSize="@dimen/xxlarge_text_size" />
 
         <View
@@ -62,12 +64,7 @@
             android:background="@color/main" />
     </LinearLayout>
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:text="Simple"
-        android:textColor="@color/light_black" />
+    
 
     <Button
         android:id="@+id/login_btn"
@@ -75,6 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/btn_selector"
         android:text="Login"
         android:textColor="@color/white"

@@ -8,39 +8,127 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:orientation="vertical" >
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/group_admin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_text_size" />
+
+            <TextView
+                android:id="@+id/group_list_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Ivy"
+                android:textColor="@color/main"
+                android:textSize="@dimen/large_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rating_show" />
+
+            <TextView
+                android:id="@+id/group_list_num_love"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="people"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
 
         <TextView
-            android:id="@+id/list_item_project_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="title"
+            android:text="WHERE:"
             android:textColor="@color/black"
             android:textSize="@dimen/large_text_size" />
 
         <TextView
-            android:id="@+id/list_item_project_description"
-            android:layout_width="match_parent"
+            android:id="@+id/group_list_where"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="content"
+            android:layout_marginLeft="5dp"
+            android:text="A11"
+            android:textColor="@color/main"
+            android:textSize="@dimen/large_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TIME:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+
+        <TextView
+            android:id="@+id/group_list_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="15:00-17:00  03/12/2015"
+            android:textColor="@color/main"
+            android:textSize="@dimen/large_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView 
+            android:id="@+id/group_list_posttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:textColor="@color/light_black"
-            android:textSize="@dimen/medium_text_size" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:gravity="center_vertical" >
-
-            <TextView
-                android:id="@+id/list_item_project_posttime"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:text="time"
-                android:textColor="@color/black"
-                android:textSize="@dimen/small_text_size" />
-        </RelativeLayout>
+            android:textSize="@dimen/medium_text_size"
+            android:text="15:00 03/12/2015"/>
+        
     </LinearLayout>
 
 </LinearLayout>

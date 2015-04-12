@@ -17,7 +17,7 @@
 package com.devspark.appmsg;
 
 
-import example.swm.app.R;
+import com.app.swm.R;
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.Resources;

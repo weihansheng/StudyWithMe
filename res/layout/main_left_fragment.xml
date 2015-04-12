@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<example.swm.app.widget.CustomScrollView 
+<com.app.swm.widget.CustomScrollView 
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/personal_scrollView"
     
@@ -30,7 +30,7 @@
             android:layout_gravity="center_vertical"
             android:orientation="horizontal" >
 
-            <example.swm.app.widget.RoundedImageView
+            <com.app.swm.widget.RoundedImageView
                 android:id="@+id/headImageView"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
@@ -104,4 +104,4 @@
         
     </LinearLayout>
 
-</example.swm.app.widget.CustomScrollView>
+</com.app.swm.widget.CustomScrollView>

@@ -45,7 +45,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/back_title"
+            android:id="@+id/userinfo_back_title"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
@@ -76,7 +76,7 @@
         android:gravity="center_horizontal"
         android:orientation="vertical" >
 
-        <example.swm.app.widget.RoundedImageView
+        <com.app.swm.widget.RoundedImageView
             android:id="@+id/user_info_headImg"
             android:layout_width="80dip"
             android:layout_height="80dip"

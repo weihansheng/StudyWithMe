@@ -1,6 +1,6 @@
 package me.storm.ninegag.view.swipeback;
 
-import example.swm.app.R;
+import com.app.swm.R;
 import uk.co.senab.photoview.PhotoView;
 import uk.co.senab.photoview.PhotoViewAttacher;
 import android.graphics.Bitmap;
@@ -8,12 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 
+import com.app.swm.widget.ProgressWheel;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingProgressListener;
 import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
 
-import example.swm.app.widget.ProgressWheel;
 
 public class PhotoViewActivity extends SwipeBackActivity {
 	String imageUrl;

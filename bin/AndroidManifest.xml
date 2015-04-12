@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="example.swm.app"
+    package="com.app.swm"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -26,7 +26,7 @@
         android:smallScreens="true" />
 
     <application
-        android:name="example.swm.app.config.MyApplication"
+        android:name="com.app.swm.config.MyApplication"
         android:allowBackup="true"
         android:configChanges="orientation|keyboardHidden|screenSize"
         android:hardwareAccelerated="true"
@@ -35,7 +35,7 @@
         android:screenOrientation="portrait"
         android:theme="@*android:style/Theme.NoTitleBar">
         <activity
-            android:name="example.swm.app.ui.WelcomeActivity"
+            android:name="com.app.swm.ui.WelcomeActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
@@ -46,47 +46,47 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="example.swm.app.ui.MainActivity"
+            android:name="com.app.swm.ui.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="example.swm.app.ui.GuideActivity"
+            android:name="com.app.swm.ui.GuideActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="example.swm.app.ui.ScheduleDetailActivity"
+            android:name="com.app.swm.ui.ScheduleDetailActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
       
         
         <activity
-            android:name="example.swm.app.ui.LoginActivity"
+            android:name="com.app.swm.ui.LoginActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="example.swm.app.ui.RegisterActivity"
+            android:name="com.app.swm.ui.RegisterActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="example.swm.app.ui.GroupListActivity"
+            android:name="com.app.swm.ui.GroupListActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="example.swm.app.ui.GroupDetailsActivity"
+            android:name="com.app.swm.ui.GroupDetailsActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="example.swm.app.ui.UserInfoActivity"
+            android:name="com.app.swm.ui.UserInfoActivity"
             android:screenOrientation="portrait" >
         </activity>
    
 
-        <service android:name="example.swm.app.service.DownloadService" >
+        <service android:name="com.app.swm.service.DownloadService" >
         </service>
 
-        <receiver android:name="example.swm.app.receiver.LoginReceiver" >
+        <receiver android:name="com.app.swm.receiver.LoginReceiver" >
             <intent-filter>
                 <action android:name="login" />
             </intent-filter>

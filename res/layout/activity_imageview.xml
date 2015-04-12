@@ -12,7 +12,7 @@
             android:layout_gravity="center"
             android:padding="0dip" />
 
-        <example.swm.app.widget.ProgressWheel
+        <com.app.swm.widget.ProgressWheel
             android:id="@+id/progressWheel"
             android:layout_width="93dp"
             android:layout_height="93dp"
