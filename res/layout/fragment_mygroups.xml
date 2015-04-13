@@ -1,40 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#f0f0f0"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hometabs"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <com.app.swm.xlistview.XListView
-        android:id="@+id/listview_collect"
+    <com.app.swm.widget.PagerSlidingTabStrip
+        android:id="@+id/tabs"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:cacheColorHint="#00000000"
-        android:choiceMode="singleChoice"
-        android:divider="@color/toolbox_line"
-        android:dividerHeight="0.5dp"
-        android:drawSelectorOnTop="true"
-        android:focusable="false"
-        android:gravity="center"
-        android:listSelector="#00000000"
-        android:scrollbars="none" />
+        android:layout_height="48dip"
+        android:background="@drawable/tab_bg"
+        android:textColor="#000000"
+        android:textSize="@dimen/medium_text_size" />
 
-    <include layout="@layout/loading_layout" />
-
-    <LinearLayout
-        android:id="@+id/view_load_nodata"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pagers_signup"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white"
-        android:gravity="center_vertical|center_horizontal"
-        android:orientation="vertical"
-        android:visibility="gone" >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/none_groups"
-            android:textColor="@color/light_black" />
-    </LinearLayout>
-
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+</LinearLayout>

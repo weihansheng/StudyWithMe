@@ -11,28 +11,26 @@
         android:layout_height="match_parent"
         android:background="#f0f0f0"
         android:orientation="vertical" >
-        
+
         <com.app.swm.xlistview.XListView
-        android:id="@+id/list_project"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:cacheColorHint="#00000000"
-        android:choiceMode="singleChoice"
-        android:divider="@color/toolbox_line"
-        android:dividerHeight="0.5dp"
-        android:drawSelectorOnTop="true"
-        android:focusable="false"
-        android:gravity="center"
-        android:listSelector="#00000000"
-        android:scrollbars="none" />
+            android:id="@+id/list_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:choiceMode="singleChoice"
+            android:divider="@color/toolbox_line"
+            android:dividerHeight="0.5dp"
+            android:drawSelectorOnTop="true"
+            android:focusable="false"
+            android:gravity="center"
+            android:listSelector="#00000000"
+            android:scrollbars="none" />
 
-    <include
-        layout="@layout/loading_layout"
-        android:visibility="gone" />
+        <include
+            layout="@layout/loading_layout"
+            android:visibility="gone" />
 
-    <include layout="@layout/load_fail_layout" />
+        <include layout="@layout/load_fail_layout" />
     </FrameLayout>
-
-    
 
 </LinearLayout>

@@ -61,7 +61,7 @@ public class GroupListActivity extends Activity implements IXListViewListener{
 	}
 	private void findById() {
 		// TODO Auto-generated method stub
-		mListView=(XListView) findViewById(R.id.list_project);
+		mListView=(XListView) findViewById(R.id.list_group);
 		loadingLayout = (LinearLayout) findViewById(R.id.view_loading);
 		loadFaillayout = (LinearLayout) findViewById(R.id.view_load_fail);
 		back=findViewById(R.id.content_back_layout);

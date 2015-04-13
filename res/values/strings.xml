@@ -136,8 +136,8 @@
     <string name="all_comment">全部评论</string>
     <string name="replay">回复</string>
     <string name="reply_hint">回复:</string>
-    <string name="my_reply">我的评论</string> 
-    <string name="reply_me">评论我的</string>
+    <string name="my_created">CREATED</string> 
+    <string name="my_joined">JOINED</string>
     <string name="say_sth">说点什么吧...</string>
     
     <string name="please_wait">请稍后</string>

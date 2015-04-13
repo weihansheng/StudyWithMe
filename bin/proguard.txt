@@ -1,4 +1,5 @@
 # view res/layout/activity_guide.xml #generated:7
+# view res/layout/fragment_mygroups.xml #generated:16
 -keep class android.support.v4.view.ViewPager { <init>(...); }
 
 # view res/layout/activity_main.xml #generated:13
@@ -56,6 +57,9 @@
 # view res/layout/activity_draf_detail.xml #generated:95
 -keep class com.app.swm.widget.NoScrollGridView { <init>(...); }
 
+# view res/layout/fragment_mygroups.xml #generated:8
+-keep class com.app.swm.widget.PagerSlidingTabStrip { <init>(...); }
+
 # view res/layout/activity_imageview.xml #generated:15
 -keep class com.app.swm.widget.ProgressWheel { <init>(...); }
 
@@ -70,8 +74,8 @@
 # view res/layout/local_pic_gridview.xml #generated:62
 -keep class com.app.swm.widget.StretchScrollView { <init>(...); }
 
-# view res/layout/activity_grouplist.xml #generated:15
-# view res/layout/fragment_mygroups.xml #generated:8
+# view res/layout/activity_grouplist.xml #generated:14
+# view res/layout/fragment_grouplist.xml #generated:15
 # view res/layout/frament_user_info2.xml #generated:212
 -keep class com.app.swm.xlistview.XListView { <init>(...); }
 

@@ -1,81 +1,135 @@
 package com.app.swm.fragment;
 
-import java.util.List;
+import java.lang.reflect.Field;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-
-import com.app.swm.entity.Group;
-import com.app.swm.xlistview.XListView;
-import com.nostra13.universalimageloader.core.DisplayImageOptions;
 
 import com.app.swm.R;
+import com.app.swm.widget.PagerSlidingTabStrip;
 
 /**
- * @Description 草稿 Fragment
+ * @Description MyGroups Fragment
  * 
- * @author MR.Wang
+ * @author MR.Johan
  * 
- * @date 2014-7-5 上午1:13:26
  * 
- * @version V1.0
  */
 
 @SuppressLint("ValidFragment")
-public class FragmentMyGroup extends Fragment{
-
-	private View rootView;
-	View parentView;
-	private XListView listView;
-	DisplayImageOptions options;
-	private List<Group> newsList;
-	public static FragmentMyGroup mactivity;
-	private LinearLayout emptylLayout;
-	private LinearLayout listlLayout;
+public class FragmentMyGroup extends Fragment {
+	//
 	private Context context;
+	private PagerSlidingTabStrip tabs;
+	private ViewPager pager;
+	private MyPagerAdapter adapter;
+	private View rootView;
 
-	// 获取到下载url后，直接复制给MapApp,里面的全局变量
-
-	private static FragmentMyGroup singleton;
-
-	public static FragmentMyGroup getInstance(Context context) {
-		if (singleton == null) {
-			singleton = new FragmentMyGroup();
-		}
-		return singleton;
-	}
-
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
-		super.onCreate(savedInstanceState);
-	}
-
-	@Override
-	public void onResume() {
-		// TODO Auto-generated method stub
-		super.onResume();
-	}
-	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		mactivity = this;
 		context = inflater.getContext();
+		if (rootView == null) {
+			rootView = inflater.inflate(R.layout.fragment_mygroups, container,
+					false);
+			tabs = (PagerSlidingTabStrip) rootView.findViewById(R.id.tabs);
+			pager = (ViewPager) rootView.findViewById(R.id.pagers_signup);
+			tabs.setShouldExpand(true);
+			tabs.setTypeface(Typeface.DEFAULT, Typeface.NORMAL);
+			tabs.setIndicatorColor(Color.parseColor("#1ba9b7")); // 下划线颜色
+			//tabs.setTextColor(Color.parseColor("#1ba9b7"));
+			tabs.setIndicatorHeight(9);
 
-		rootView = inflater.inflate(R.layout.fragment_mygroups, container, false);
-		//initView(rootView);
-
+			Handler handler = new Handler();
+			handler.postDelayed(run, 380);
+		}
+		ViewGroup parent = (ViewGroup) rootView.getParent();
+		if (parent != null) {
+			parent.removeView(rootView);
+		}
 		return rootView;
+	}
+
+	Runnable run = new Runnable() {
+
+		@Override
+		public void run() {
+			// TODO Auto-generated method stub
+			initView(rootView);
+		}
+	};
+
+	private void initView(View rootView) {
+		adapter = new MyPagerAdapter(getChildFragmentManager());
+		pager.setAdapter(adapter);
+		tabs.setViewPager(pager);
 
 	}
 
-	
+	public class MyPagerAdapter extends FragmentPagerAdapter {
 
+		private final String[] TITLES = {
+				getResources().getString(R.string.my_created),
+				getResources().getString(R.string.my_joined) };
+
+		public MyPagerAdapter(FragmentManager fm) {
+			super(fm);
+		}
+
+		@Override
+		public CharSequence getPageTitle(int position) {
+			return TITLES[position];
+		}
+
+		@Override
+		public int getCount() {
+
+			return TITLES.length;
+		}
+
+		@Override
+		public Fragment getItem(int position) {
+
+			if (position == 0) {
+				return new FragmentMyCreated();
+			} else {
+				return new FragmentMyJoined();
+			}
+		}
+
+	}
+
+	/*
+	 * @Override public void onDestroyView() { // TODO Auto-generated method
+	 * stub super.onDestroyView(); FragmentTransaction fragmentTransaction
+	 * =getActivity().getSupportFragmentManager().beginTransaction();
+	 * fragmentTransaction.remove(getTargetFragment()); }
+	 */
+	@Override
+	public void onDetach() {
+		super.onDetach();
+		try {
+			Field childFragmentManager = Fragment.class
+					.getDeclaredField("mChildFragmentManager");
+			childFragmentManager.setAccessible(true);
+			childFragmentManager.set(this, null);
+
+		} catch (NoSuchFieldException e) {
+			throw new RuntimeException(e);
+		} catch (IllegalAccessException e) {
+			throw new RuntimeException(e);
+		}
+
+	}
 }
