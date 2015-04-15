@@ -2,13 +2,16 @@ package com.app.swm.fragment;
 
 import java.util.Random;
 
+import com.app.swm.ui.AddGroupActivity;
 import com.app.swm.ui.GroupListActivity;
+import com.app.swm.ui.MainActivity;
 import com.app.swm.widget.KeywordsFlow;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -23,6 +26,7 @@ import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -59,6 +63,7 @@ public class FragmentHome extends Fragment implements OnClickListener,OnTouchLis
 	private ImageView ivDeleteText;
 	private EditText etSearch;
 	private Button btnSearch;
+	private ImageButton ibAddGroup;
 	private String searchName;
 	@SuppressWarnings("deprecation")
 	private GestureDetector detector = new GestureDetector(this);
@@ -122,6 +127,8 @@ public class FragmentHome extends Fragment implements OnClickListener,OnTouchLis
 		// 添加
 		feedKeywordsFlow(keywordsFlow, keywords);
 		keywordsFlow.go2Show(KeywordsFlow.ANIMATION_IN);
+		ibAddGroup=MainActivity.ib_add;
+		ibAddGroup.setOnClickListener(this);
 
 	}
 
@@ -203,9 +210,15 @@ public class FragmentHome extends Fragment implements OnClickListener,OnTouchLis
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
+		Intent intent=new Intent();
 		switch (v.getId()) {
 		case R.id.ivDeleteText:
 			etSearch.setText("");
+			break;
+		case R.id.ib_add:
+			//System.out.println("dianji le ");
+			intent.setClass(getActivity(), AddGroupActivity.class);
+			startActivity(intent);
 			break;
 		case R.id.btnSearch:
 			if (!searchName.equals(etSearch.getText().toString())) {

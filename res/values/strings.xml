@@ -114,7 +114,7 @@
     <string name="follow">添加关注</string>
     <string name="follow_cancel">取消关注</string>
     <string name="fans">粉丝：</string>
-    <string name="post">帖子：</string>
+    <string name="post">Post</string>
     <string name="follower">关注：</string>
     <string name="user_resume">简介：</string>
     <string name="revise_info">修改资料</string>
@@ -122,6 +122,8 @@
     <string name="detail">详情</string>
     <string name="revise_img">自定义头像</string>
     <string name="name">Name</string>
+    <string name="first_name">FirstName</string>
+    <string name="last_name">LastName</string>
     <string name="name_hint">姓名:</string>
     <string name="intro_hint">简介:</string>
     <string name="now_password">当前密码</string>
@@ -179,4 +181,8 @@
     <string name="error_password_not_same">两次密码不一致!</string>
     <string name="exit_title">Exit ?</string>
     <string name="collect">Collect</string>
+    <string name="subject">Subject</string>
+    <string name="groupname">GroupName</string>
+    <string name="create">Create</string>
+    <string name="room">Room</string>
 </resources>

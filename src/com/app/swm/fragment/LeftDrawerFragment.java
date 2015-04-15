@@ -1,5 +1,7 @@
 package com.app.swm.fragment;
 
+import javax.crypto.spec.IvParameterSpec;
+
 import com.app.swm.config.Config;
 import com.app.swm.config.ImageOptionsUtil;
 import com.app.swm.config.MyApplication;
@@ -20,6 +22,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -44,12 +47,13 @@ public class LeftDrawerFragment extends Fragment {
 	//private View menuNotification;
 	private View menuFreeRomm;
 	private ImageView new_message_iv;
-
+	private ImageButton ib_addbtn;
 	private View currentView; // 当前选中的View
 	private View rootView; // 当前整个View
 	private static ImageView headImageView; // 左侧图像 ImageView
 	public static TextView nameTv; // 左侧名字 textView
 	private TextView titleTv; // 顶部栏目标题 textView
+	private ImageView ib_add; // 顶部栏目添加按钮
 	Fragment newContent = null;
 	private CustomScrollView scrollView = null;
 
@@ -120,6 +124,7 @@ public class LeftDrawerFragment extends Fragment {
 		nameTv = (TextView) rootView.findViewById(R.id.nameTextView);
 
 		titleTv = MainActivity.titleTv;
+		ib_addbtn=MainActivity.ib_add;
 		currentView = menuHome;
 		currentView.setSelected(true);
 
@@ -178,6 +183,7 @@ public class LeftDrawerFragment extends Fragment {
 				// newContent = FragmentHome.getInstance(getActivity());
 				newContent = new FragmentHome();
 				titleTv.setText(R.string.home);
+				ib_addbtn.setVisibility(View.VISIBLE);
 				currentView.setSelected(false);
 				currentView = menuHome;
 				currentView.setSelected(true);
@@ -188,6 +194,7 @@ public class LeftDrawerFragment extends Fragment {
 					newContent = new FragmentMyGroup();
 				}
 				titleTv.setText(R.string.menu_mygroups);
+				ib_addbtn.setVisibility(View.GONE);
 				currentView.setSelected(false);
 				currentView = menuMyGroup;
 				currentView.setSelected(true);
@@ -209,6 +216,7 @@ public class LeftDrawerFragment extends Fragment {
 					newContent = new FragmentSchedule();
 				}
 				titleTv.setText(R.string.menu_schedule);
+				ib_addbtn.setVisibility(View.GONE);
 				currentView.setSelected(false);
 				currentView = menuSchedule;
 				currentView.setSelected(true);
@@ -219,6 +227,7 @@ public class LeftDrawerFragment extends Fragment {
 					newContent = new FragmentFreeRoom();
 				}
 				titleTv.setText(R.string.menu_freeroom);
+				//ib_addbtn.setVisibility(View.GONE);
 				currentView.setSelected(false);
 				currentView = menuFreeRomm;
 				currentView.setSelected(true);
@@ -229,6 +238,7 @@ public class LeftDrawerFragment extends Fragment {
 					newContent = new FragmentSetting();
 				}
 				titleTv.setText(R.string.menu_settings);
+				ib_addbtn.setVisibility(View.GONE);
 				currentView.setSelected(false);
 				currentView = menuSettings;
 				currentView.setSelected(true);

@@ -5,44 +5,47 @@
 # view res/layout/activity_main.xml #generated:13
 -keep class android.support.v4.widget.DrawerLayout { <init>(...); }
 
-# view AndroidManifest.xml #generated:28
+# view AndroidManifest.xml #generated:29
 -keep class com.app.swm.config.MyApplication { <init>(...); }
 
 # view res/layout/local_pic_gridview_item.xml #generated:11
 # view res/layout/local_pic_gridview_second_item.xml #generated:8
 -keep class com.app.swm.image.local.MyImageView { <init>(...); }
 
-# view AndroidManifest.xml #generated:89
+# view AndroidManifest.xml #generated:91
 -keep class com.app.swm.receiver.LoginReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:86
+# view AndroidManifest.xml #generated:88
 -keep class com.app.swm.service.DownloadService { <init>(...); }
 
-# view AndroidManifest.xml #generated:76
+# view AndroidManifest.xml #generated:83
+-keep class com.app.swm.ui.AddGroupActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
 -keep class com.app.swm.ui.GroupDetailsActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:72
+# view AndroidManifest.xml #generated:71
 -keep class com.app.swm.ui.GroupListActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:52
+# view AndroidManifest.xml #generated:53
 -keep class com.app.swm.ui.GuideActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:64
+# view AndroidManifest.xml #generated:63
 -keep class com.app.swm.ui.LoginActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:48
+# view AndroidManifest.xml #generated:49
 -keep class com.app.swm.ui.MainActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:68
+# view AndroidManifest.xml #generated:67
 -keep class com.app.swm.ui.RegisterActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:57
+# view AndroidManifest.xml #generated:58
 -keep class com.app.swm.ui.ScheduleDetailActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:80
+# view AndroidManifest.xml #generated:79
 -keep class com.app.swm.ui.UserInfoActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:37
+# view AndroidManifest.xml #generated:38
 -keep class com.app.swm.ui.WelcomeActivity { <init>(...); }
 
 # view res/layout/notice_viewpaper.xml #generated:7
@@ -74,10 +77,25 @@
 # view res/layout/local_pic_gridview.xml #generated:62
 -keep class com.app.swm.widget.StretchScrollView { <init>(...); }
 
-# view res/layout/activity_grouplist.xml #generated:14
-# view res/layout/fragment_grouplist.xml #generated:15
+# view res/layout/activity_grouplist.xml #generated:15
+# view res/layout/fragment_grouplist.xml #generated:14
 # view res/layout/frament_user_info2.xml #generated:212
 -keep class com.app.swm.xlistview.XListView { <init>(...); }
+
+# view res/layout/date_picker_view_animator.xml #generated:2
+-keep class com.fourmob.datetimepicker.date.AccessibleDateAnimator { <init>(...); }
+
+# view res/layout/year_label_text_view.xml #generated:2
+-keep class com.fourmob.datetimepicker.date.TextViewWithCircularIndicator { <init>(...); }
+
+# view res/layout/time_header_label.xml #generated:49
+# view res/layout/time_header_label.xml #generated:90
+# view res/layout/time_header_label.xml #generated:99
+-keep class com.sleepbot.datetimepicker.AccessibleTextView { <init>(...); }
+
+# view land\res/layout-land/time_picker_dialog.xml #generated:63
+# view res/layout/time_picker_dialog.xml #generated:35
+-keep class com.sleepbot.datetimepicker.time.RadialPickerLayout { <init>(...); }
 
 # view res/layout/swipeback_layout.xml #generated:2
 -keep class me.storm.ninegag.view.swipeback.SwipeBackLayout { <init>(...); }

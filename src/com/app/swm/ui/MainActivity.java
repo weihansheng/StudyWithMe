@@ -41,6 +41,8 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -50,6 +52,7 @@ OnActionSheetSelected, OnCancelListener {
 	private DrawerLayout drawerLayout;
 	private FrameLayout leftLayout;
 	public static TextView titleTv;
+	public static ImageButton ib_add;
 	public static float density;
 	public static float xdpi;
 	public static float ydpi;
@@ -74,6 +77,8 @@ OnActionSheetSelected, OnCancelListener {
 		setContentView(R.layout.activity_main);
 		drawerLayout = (DrawerLayout) findViewById(R.id.content_drawer);
 		leftLayout = (FrameLayout) findViewById(R.id.left_drawer);
+		ib_add=(ImageButton) findViewById(R.id.ib_add);
+		ib_add.setVisibility(View.VISIBLE);
 		titleTv = (TextView) findViewById(R.id.main_title_name);
 		drawerLayout.setDrawerShadow(R.drawable.shadow,
 				GravityCompat.START);

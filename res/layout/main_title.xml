@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/title_height"
     android:background="@color/main"
-    android:gravity="center_vertical"
     android:orientation="horizontal"
     android:padding="0.0px" >
 
@@ -27,8 +26,6 @@
 
     <TextView
         android:id="@+id/main_title_name"
-        android:textColor="@color/white"
-        android:textSize="@dimen/large_text_size"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
@@ -37,6 +34,19 @@
         android:paddingLeft="96.0dip"
         android:paddingRight="96.0dip"
         android:singleLine="true"
-        android:text="@string/home" />
+        android:text="@string/home"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_text_size" />
+
+    <ImageButton
+        android:id="@+id/ib_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_add_selector"
+        android:includeFontPadding="false" />
 
 </RelativeLayout>

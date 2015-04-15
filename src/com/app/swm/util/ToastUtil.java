@@ -14,7 +14,7 @@ public class ToastUtil {
     	appMsg.show();
     }
     public static  void showSuccessMsg(Activity context,int msg_res) {
-    	AppMsg.Style style = new AppMsg.Style(LENGTH_SHORT,example.swm.app.R.color.success);
+    	AppMsg.Style style = new AppMsg.Style(LENGTH_SHORT,com.app.swm.R.color.success);
     	String msg = context.getResources().getString(msg_res);
     	AppMsg appMsg = AppMsg.makeText(context, msg, style);
     	appMsg.setPriority(AppMsg.PRIORITY_HIGH);
@@ -24,7 +24,7 @@ public class ToastUtil {
 
     public static  void showErrorMsg(Activity context,int msg_res) {
     	
-    	AppMsg.Style style = new AppMsg.Style(LENGTH_SHORT,example.swm.app.R.color.error);
+    	AppMsg.Style style = new AppMsg.Style(LENGTH_SHORT,com.app.swm.R.color.error);
     	String msg = context.getResources().getString(msg_res);
     	AppMsg appMsg = AppMsg.makeText(context, msg, style);
     	appMsg.setPriority(AppMsg.PRIORITY_HIGH);
@@ -34,7 +34,7 @@ public class ToastUtil {
     
     public static  void showInfoMsg(Activity context,int msg_res) {
     	
-    	AppMsg.Style style = new AppMsg.Style(LENGTH_SHORT,example.swm.app.R.color.info);
+    	AppMsg.Style style = new AppMsg.Style(LENGTH_SHORT,com.app.swm.R.color.info);
     	String msg = context.getResources().getString(msg_res);
     	AppMsg appMsg = AppMsg.makeText(context, msg, style);
     	appMsg.setPriority(AppMsg.PRIORITY_HIGH);

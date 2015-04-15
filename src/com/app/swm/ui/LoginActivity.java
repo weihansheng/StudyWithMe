@@ -126,9 +126,9 @@ public class LoginActivity extends Activity {
 				break;
 			case R.id.login_btn:
 				loginBtn.setText(R.string.login_ing);
-				intent.setClass(LoginActivity.this, MainActivity.class);
-				startActivity(intent);
-				//login();
+				//intent.setClass(LoginActivity.this, MainActivity.class);
+				//startActivity(intent);
+				login();
 				break;
 			case R.id.signup_layout:
 				intent.setClass(LoginActivity.this, RegisterActivity.class);

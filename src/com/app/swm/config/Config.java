@@ -30,6 +30,7 @@ public class Config {
 	public static final String  AC_USER_HEAD = "upload_head"; 	     //修改头像
 	public static final String  AC_NOTICE_LIST = "notice_list"; 	 //通知list
 	public static final String  AC_USER_LOGIN = "login.php"; 		 //登陆		    
+	public static final String  AC_USER_REGISTER = "register.php"; 		 //登陆		    
 	public static final String  AC_USER_FANS = "user_fans"; 		 //粉丝		    
 	public static final String  AC_USER_FOLLOW = "user_following";     //关注的人		    
 	public static final String  AC_USER_INTRO = "user_modify_intro";    //简介		    
