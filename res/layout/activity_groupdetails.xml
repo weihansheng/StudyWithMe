@@ -1,371 +1,502 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical" >
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
-
-        <include
-            android:id="@+id/group_detail_top"
-            layout="@layout/title_back" />
+        android:layout_height="@dimen/title_height"
+        android:background="@color/main"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="0.0px" >
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
+            android:id="@+id/groupdetail_back_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_layout_selector"
             android:gravity="center_vertical"
             android:orientation="horizontal" >
 
-            <LinearLayout
-                android:layout_width="0dp"
+            <ImageButton
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/arrow_back"
+                android:gravity="center"
+                android:includeFontPadding="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingLeft="6.0dip"
+                android:singleLine="true"
+                android:text="@string/back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medium_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/groupdetail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_size" />
+
+        <TextView
+            android:id="@+id/tv_join"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:text="Join"
+            android:textColor="@drawable/textview_selector"
+            android:textSize="@dimen/large_text_size" />
+    </RelativeLayout>
+
+    <com.app.swm.widget.StretchScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="COURSE:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/large_text_size" />
+
+                    <TextView
+                        android:id="@+id/group_list_admin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="C++"
+                        android:textColor="@color/main"
+                        android:textSize="@dimen/large_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/rating_show" />
+
+                    <TextView
+                        android:id="@+id/group_list_num_love"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="10"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/large_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="people"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/large_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:orientation="horizontal" >
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="COURSE:"
+                    android:text="@string/group_admin"
                     android:textColor="@color/black"
                     android:textSize="@dimen/large_text_size" />
 
                 <TextView
-                    android:id="@+id/group_list_admin"
+                    android:id="@+id/group_admin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:text="C++"
+                    android:text="Ivy"
                     android:textColor="@color/main"
                     android:textSize="@dimen/large_text_size" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
                 android:orientation="horizontal" >
 
-                <ImageView
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/rating_show" />
+                    android:text="WHERE:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_text_size" />
 
                 <TextView
-                    android:id="@+id/group_list_num_love"
+                    android:id="@+id/group_where"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="10"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/large_text_size" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="2dp"
-                    android:text="people"
+                    android:text="c5"
                     android:textColor="@color/black"
                     android:textSize="@dimen/large_text_size" />
             </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:orientation="horizontal" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/group_admin"
-                android:textColor="@color/black"
-                android:textSize="@dimen/large_text_size" />
-
-            <TextView
-                android:id="@+id/group_admin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:text="Ivy"
-                android:textColor="@color/main"
-                android:textSize="@dimen/large_text_size" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="WHERE:"
-                android:textColor="@color/black"
-                android:textSize="@dimen/large_text_size" />
-
-            <TextView
-                android:id="@+id/group_where"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="c5"
-                android:textColor="@color/black"
-                android:textSize="@dimen/large_text_size" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/group_time"
-                android:textColor="@color/black"
-                android:textSize="@dimen/large_text_size" />
-
-            <TextView
-                android:id="@+id/group_time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="09:00-10:00"
-                android:textColor="@color/black"
-                android:textSize="@dimen/large_text_size" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/group_date"
-                android:textColor="@color/black"
-                android:textSize="@dimen/large_text_size" />
-
-            <TextView
-                android:id="@+id/group_date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="03-13-2015"
-                android:textColor="@color/black"
-                android:textSize="@dimen/large_text_size" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Num:"
-                android:textColor="@color/black"
-                android:textSize="@dimen/large_text_size" />
-
-            <TextView
-                android:id="@+id/group_people_num"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="5"
-                android:textColor="@color/main"
-                android:textSize="@dimen/large_text_size" />
-
-            <TextView
-                android:id="@+id/group_"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="/"
-                android:textColor="@color/main"
-                android:textSize="@dimen/large_text_size" />
-
-            <TextView
-                android:id="@+id/group_applicants"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="10"
-                android:textColor="@color/main"
-                android:textSize="@dimen/large_text_size" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:orientation="horizontal" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Description:"
-                android:textColor="@color/black"
-                android:textSize="@dimen/large_text_size" />
-
-            <TextView
-                android:id="@+id/group_description"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="We are instereed in Css, you can join us. Come on!"
-                android:textColor="@color/main"
-                android:textSize="@dimen/large_text_size" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:orientation="vertical" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="SKILL:"
-                android:textColor="@color/black"
-                android:textSize="@dimen/large_text_size" />
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
                 android:orientation="horizontal" >
 
                 <TextView
-                    android:id="@+id/group_people_num"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C++"
-                    android:textColor="@color/main"
+                    android:text="@string/group_time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_text_size" />
+
+                <TextView
+                    android:id="@+id/group_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="09:00-10:00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/group_date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_text_size" />
+
+                <TextView
+                    android:id="@+id/group_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="03-13-2015"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Num:"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/large_text_size" />
 
                 <TextView
                     android:id="@+id/group_people_num"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="10dp"
                     android:text="5"
                     android:textColor="@color/main"
                     android:textSize="@dimen/large_text_size" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
 
                 <TextView
-                    android:id="@+id/group_people_num"
+                    android:id="@+id/group_"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CSS"
+                    android:text="/"
                     android:textColor="@color/main"
                     android:textSize="@dimen/large_text_size" />
 
                 <TextView
-                    android:id="@+id/group_people_num"
+                    android:id="@+id/group_applicants"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:text="3"
+                    android:text="10"
                     android:textColor="@color/main"
                     android:textSize="@dimen/large_text_size" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:orientation="horizontal" >
 
                 <TextView
-                    android:id="@+id/group_people_num"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="JAVA"
-                    android:textColor="@color/main"
+                    android:text="Description:"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/large_text_size" />
 
                 <TextView
-                    android:id="@+id/group_people_num"
+                    android:id="@+id/group_description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:text="4"
+                    android:layout_marginLeft="10dp"
+                    android:text="We are instereed in Css, you can join us. Come on!"
                     android:textColor="@color/main"
                     android:textSize="@dimen/large_text_size" />
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SKILL:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/group_people_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C++"
+                        android:textColor="@color/main"
+                        android:textSize="@dimen/large_text_size" />
+
+                    <TextView
+                        android:id="@+id/group_people_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="5"
+                        android:textColor="@color/main"
+                        android:textSize="@dimen/large_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/group_people_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CSS"
+                        android:textColor="@color/main"
+                        android:textSize="@dimen/large_text_size" />
+
+                    <TextView
+                        android:id="@+id/group_people_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="3"
+                        android:textColor="@color/main"
+                        android:textSize="@dimen/large_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/group_people_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JAVA"
+                        android:textColor="@color/main"
+                        android:textSize="@dimen/large_text_size" />
+
+                    <TextView
+                        android:id="@+id/group_people_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="4"
+                        android:textColor="@color/main"
+                        android:textSize="@dimen/large_text_size" />
+                </LinearLayout>
+
+                
+            </LinearLayout>
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="vertical" >
+
+                    <com.app.swm.xlistview.XListView
+                        android:id="@+id/listview_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cacheColorHint="#00000000"
+                        android:choiceMode="singleChoice"
+                        android:divider="@color/toolbox_line"
+                        android:dividerHeight="0.5dp"
+                        android:drawSelectorOnTop="true"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:listSelector="#00000000"
+                        android:scrollbars="none" />
+
+                    <include layout="@layout/loading_layout" />
+
+                    <LinearLayout
+                        android:id="@+id/view_load_nodata"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/none_comment"
+                            android:textColor="@color/light_black" />
+                    </LinearLayout>
+                </FrameLayout>
         </LinearLayout>
-    </LinearLayout>
+    </com.app.swm.widget.StretchScrollView>
 
-    <RelativeLayout
-        android:layout_width="fill_parent"
+    <LinearLayout
+        android:id="@+id/member_layout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
         android:gravity="center_vertical"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal" >
+        android:orientation="vertical"
+        android:paddingLeft="20dp" >
 
-        <LinearLayout
-            android:id="@+id/member_layout"
+        <TextView
+            android:id="@+id/member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="MEMBERS"
+            android:textColor="@color/main"
+            android:textSize="@dimen/large_text_size" />
+
+        <View
+            android:id="@+id/member_underline"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/main" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FAFAFA"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip" >
+
+        <EditText
+            android:id="@+id/et_comment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:gravity="center_vertical"
-            android:orientation="vertical"
-            android:paddingLeft="20dp" >
-
-            <TextView
-                android:id="@+id/member"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="MEMBERS"
-                android:layout_gravity="center_vertical"
-                android:textColor="@color/main"
-                android:textSize="@dimen/large_text_size" />
-
-            <View
-                android:id="@+id/member_underline"
-                android:layout_width="wrap_content"
-                android:layout_height="1dp"
-                android:background="@color/main" />
-        </LinearLayout>
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/bt_comment"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/want_comment"
+            android:minHeight="40dp" >
+        </EditText>
 
         <Button
-            android:id="@+id/group_btn_join"
+            android:id="@+id/bt_comment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/et_comment"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="8dp"
             android:background="@drawable/btn_selector"
-            android:text="Join"
-            android:textSize="@dimen/xlarge_text_size" />
+            android:minHeight="40dp"
+            android:text="@string/post"
+            android:textColor="@color/white" />
     </RelativeLayout>
 
-</RelativeLayout>
+</LinearLayout>

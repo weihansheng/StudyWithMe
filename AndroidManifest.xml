@@ -77,6 +77,11 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:name="com.app.swm.ui.GroupMembersActivity"
+            android:screenOrientation="portrait" 
+            android:theme="@style/GroupMembers">
+        </activity>
+        <activity
             android:name="com.app.swm.ui.UserInfoActivity"
             android:screenOrientation="portrait" >
         </activity>

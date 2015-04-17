@@ -108,7 +108,7 @@ public class GroupListActivity extends Activity implements IXListViewListener{
 				context.startActivity(intent);
 			}
 		});
-		loadNews(1, true);
+		loadGroups(1, true);
 		
 	}
 	private void initEvent() {
@@ -120,7 +120,7 @@ public class GroupListActivity extends Activity implements IXListViewListener{
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				/*loadNews(1, true);
+				/*loadGroups(1, true);
 				loadNotice();
 				LoginUtil.Login(context);*/
 			}
@@ -129,7 +129,7 @@ public class GroupListActivity extends Activity implements IXListViewListener{
 	}
 	@Override
 	public void onRefresh() {
-		//loadNews(1, true);
+		//loadGroups(1, true);
 		String curDate = TimeUtil.dateToString(new Date(), TimeUtil.FORMAT_MONTH_DAY_TIME_EN);
 		SharedPreferencesUtil.add(context, "news_time", curDate);
 		// 通知 不用刷新
@@ -142,7 +142,7 @@ public class GroupListActivity extends Activity implements IXListViewListener{
 
 	@Override
 	public void onLoadMore() {
-		loadNews( page + 1, false);
+		loadGroups( page + 1, false);
 	}
 
 	private void onLoad() {
@@ -160,7 +160,7 @@ public class GroupListActivity extends Activity implements IXListViewListener{
 
 	}
 	// 加载news
-		private void loadNews(int page_num, final boolean refesh) {
+		private void loadGroups(int page_num, final boolean refesh) {
 
 			/*Group group=new Group();
 			for (int i = 0; i < 10; i++) {
