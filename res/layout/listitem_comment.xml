@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="5dip"
+    android:paddingTop="5dip" >
+
+    <TextView
+        android:id="@+id/commenter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Johan"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/medium_text_size" />
+
+    <TextView
+        android:id="@+id/comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:singleLine="true"
+        android:text="2015-05-03"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/micro_text_size" />
+
+    <TextView
+        android:id="@+id/comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:text="comment"
+        android:textSize="@dimen/medium_text_size" />
+
+</LinearLayout>
