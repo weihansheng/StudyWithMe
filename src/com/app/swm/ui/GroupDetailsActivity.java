@@ -70,7 +70,7 @@ public class GroupDetailsActivity extends Activity implements OnClickListener ,I
 		tvDate = (TextView) findViewById(R.id.group_date);
 		tvTime = (TextView) findViewById(R.id.group_time);
 		tvDescription = (TextView) findViewById(R.id.group_description);
-		tvApplicants = (TextView) findViewById(R.id.group_applicants);
+		tvApplicants = (TextView) findViewById(R.id.group_people_num_now);
 		tvJoin = (TextView) findViewById(R.id.tv_join);
 		tv_title=(TextView) findViewById(R.id.groupdetail_title);
 		tv_title.setText("Details");

@@ -177,7 +177,7 @@ public class DatebaseService {
 				/*map.setContent(cursor.getString(contentIndex));
 				map.setNewsPics(cursor.getString(newsPicsIndex));
 				map.setDate(cursor.getString(timeIndex));*/
-				map.setId(cursor.getInt(idIndex));
+				map.setGroupID(cursor.getInt(idIndex));
 				list.add(map);
 			}
 		} catch (Exception e) {
@@ -233,7 +233,7 @@ public class DatebaseService {
 				/*news.setContent(cursor.getString(contentIndex));
 				news.setNewsPics(cursor.getString(newsPicsIndex));
 				news.setDate(cursor.getString(timeIndex));*/
-				news.setId(cursor.getInt(idIndex));
+				news.setGroupID(cursor.getInt(idIndex));
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

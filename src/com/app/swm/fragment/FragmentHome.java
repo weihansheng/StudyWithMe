@@ -2,7 +2,8 @@ package com.app.swm.fragment;
 
 import java.util.Random;
 
-import com.app.swm.ui.AddGroupActivity;
+import com.app.swm.config.MyApplication;
+import com.app.swm.ui.CreatGroupActivity;
 import com.app.swm.ui.GroupListActivity;
 import com.app.swm.ui.MainActivity;
 import com.app.swm.widget.KeywordsFlow;
@@ -38,7 +39,7 @@ import com.app.swm.R;
  * 
  * @Description 首页 Fragment
  * 
- * @author MR.Wang
+ * @author Johan
  * 
  * @date 2014-7-5 上午12:32:06
  * 
@@ -54,11 +55,11 @@ public class FragmentHome extends Fragment implements OnClickListener,OnTouchLis
 	private LinearLayout loadingLayout;
 	private LinearLayout loadFaillayout;
 	private Button btn_refresh;
-	public String[] keywords = { "C++", "Java", "English", "Php", "Ruby",
-			"Phython", "Chinese", "MacBook Pro", "SPY Mouse", "Thinkpad E40",
-			"CSDN leak", "3D", "4743G", "mmShow", "iciba", "App", "Internet",
-			"Time", "Chrome", "Safari", "Siri", "A5", "iPhone4S", "ME525",
-			" M9", "S2500" };
+	public String[] keywords = { "Philosophy", "Java", "Logic", "Php", "Ruby",
+			"Phython", "Chinese", "Economics", "Statistics", "Law",
+			"Education Science", "Psychology", "Art Theory", "Mathematics", "Astronomy", "Physics", "Object-C",
+			"Geography", "JavaWeb", "Safari", "Html", "JavaScript", "Css", "Git",
+			"Photoshop", "Dreamweaver" };
 	private KeywordsFlow keywordsFlow;
 	private ImageView ivDeleteText;
 	private EditText etSearch;
@@ -217,7 +218,7 @@ public class FragmentHome extends Fragment implements OnClickListener,OnTouchLis
 			break;
 		case R.id.ib_add:
 			//System.out.println("dianji le ");
-			intent.setClass(getActivity(), AddGroupActivity.class);
+			intent.setClass(getActivity(), CreatGroupActivity.class);
 			startActivity(intent);
 			break;
 		case R.id.btnSearch:
@@ -251,7 +252,14 @@ public class FragmentHome extends Fragment implements OnClickListener,OnTouchLis
 				String keyword = ((TextView) v).getText().toString();
 				System.out.println(keyword);
 				Intent intent = new Intent();
-				intent.setClass(getActivity(), GroupListActivity.class);
+				try {
+					intent.setClass(getActivity(), GroupListActivity.class);
+				} catch (Exception e) {
+					// TODO: handle exception
+					MyApplication.getInstance().exit();
+					
+				}
+				
 				//intent.setAction(Intent.ACTION_VIEW);
 				//intent.addCategory(Intent.CATEGORY_DEFAULT);
 				//intent.setData(Uri.parse("http://www.google.com.hk/#q=" +keyword));

@@ -73,7 +73,7 @@ OnActionSheetSelected, OnCancelListener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
+		MyApplication.getInstance().addActivity(this);
 		setContentView(R.layout.activity_main);
 		drawerLayout = (DrawerLayout) findViewById(R.id.content_drawer);
 		leftLayout = (FrameLayout) findViewById(R.id.left_drawer);
@@ -108,7 +108,7 @@ OnActionSheetSelected, OnCancelListener {
 			}
 		});
 		//自动登录
-		String login = SharedPreferencesUtil.get(MainActivity.this, "auto_login");
+		/*String login = SharedPreferencesUtil.get(MainActivity.this, "auto_login");
 		if("0".equals(login) || "".equals(login)){
 			LoginUtil.post(MainActivity.this);
 			
@@ -128,9 +128,8 @@ OnActionSheetSelected, OnCancelListener {
 			// 上面是获取manifest中的版本数据，我是使用versionCode
 			// 在从服务器获取到最新版本的versionCode,比较
 			//getUpdate();
-		}
+		}*/
 	}
-	
 	public DrawerLayout getmDrawerLayout() {
 		return drawerLayout;
 	}

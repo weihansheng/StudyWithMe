@@ -1,6 +1,5 @@
 package com.app.swm.entity;
 
-import java.util.Date;
 
 public class User implements java.io.Serializable {
 
@@ -27,6 +26,8 @@ public class User implements java.io.Serializable {
 	public static final short STATUS_STUDENT = 0;// 学生
 	public static final short STATUS_TREACHER = 1;//老师
 	public static final short STATUS_PUBLIC = 2;//公众号
+	
+	
 	public Integer getStudentID() {
 		return studentID;
 	}

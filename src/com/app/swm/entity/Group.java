@@ -3,8 +3,8 @@ package com.app.swm.entity;
 import java.util.Date;
 
 public class Group {
-	private Integer id;
-	private Integer subjectId;
+	private Integer groupID;
+	private Integer moduleID;
 	private Integer adminID;
 	private String type;
 	private String admin;
@@ -13,9 +13,24 @@ public class Group {
 	private Date postTime;
 	private Date startTime;
 	private Integer peopleNum;
+	private Integer loveNum;
+	private Integer applicant;
 	private String where;
 	private ClassRoom classRoom;
 	
+	
+	public Integer getLoveNum() {
+		return loveNum;
+	}
+	public void setLoveNum(Integer loveNum) {
+		this.loveNum = loveNum;
+	}
+	public Integer getApplicant() {
+		return applicant;
+	}
+	public void setApplicant(Integer applicant) {
+		this.applicant = applicant;
+	}
 	public String getTitle() {
 		return title;
 	}
@@ -34,17 +49,18 @@ public class Group {
 	public void setPostTime(Date postTime) {
 		this.postTime = postTime;
 	}
-	public Integer getId() {
-		return id;
+
+	public Integer getGroupID() {
+		return groupID;
 	}
-	public void setId(Integer id) {
-		this.id = id;
+	public void setGroupID(Integer groupID) {
+		this.groupID = groupID;
 	}
-	public Integer getSubjectId() {
-		return subjectId;
+	public Integer getModuleID() {
+		return moduleID;
 	}
-	public void setSubjectId(Integer subjectId) {
-		this.subjectId = subjectId;
+	public void setModuleID(Integer moduleID) {
+		this.moduleID = moduleID;
 	}
 	public Integer getAdminID() {
 		return adminID;
@@ -89,6 +105,17 @@ public class Group {
 	public void setWhere(String where) {
 		this.where = where;
 	}
+	@Override
+	public String toString() {
+		return "Group [groupID=" + groupID + ", moduleID=" + moduleID
+				+ ", adminID=" + adminID + ", type=" + type + ", admin="
+				+ admin + ", title=" + title + ", description=" + description
+				+ ", postTime=" + postTime + ", startTime=" + startTime
+				+ ", peopleNum=" + peopleNum + ", loveNum=" + loveNum
+				+ ", applicant=" + applicant + ", where=" + where
+				+ ", classRoom=" + classRoom + "]";
+	}
+	
 	
 
 }

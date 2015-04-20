@@ -22,15 +22,15 @@ public class Config {
 	public static final int PAGE_NUM = 10; 
 	
 	public static final String  AC_NEWS_lIST = "";                   //news 列表
-	public static final String  AC_NEWS_SEND = "news_send"; 		 //发布news
-	public static final String  AC_NEWS_LATEST = "getGroupList.php"; 	 //最新的news
+	public static final String  AC_USER_LOGIN = "login.php"; 		 //登陆
+	public static final String  AC_USER_REGISTER = "register.php"; 		 //登陆	
+	public static final String  AC_CREAT_GROUP = "create_group.php";  //创建小组
+	public static final String  AC_GET_GROUPLIST = "getGroupList.php"; 	 //最新的news
 	public static final String  AC_NEWS_PERSON = "news_person"; 	 //个人的news
 	public static final String  AC_NEWS_FOLLOW = "news_follow"; 	 //关注的人的news
 	public static final String  AC_NEWS_PIC = "upload_newspic"; 	 //发布news 图片
 	public static final String  AC_USER_HEAD = "upload_head"; 	     //修改头像
 	public static final String  AC_NOTICE_LIST = "notice_list"; 	 //通知list
-	public static final String  AC_USER_LOGIN = "login.php"; 		 //登陆		    
-	public static final String  AC_USER_REGISTER = "register.php"; 		 //登陆		    
 	public static final String  AC_USER_FANS = "user_fans"; 		 //粉丝		    
 	public static final String  AC_USER_FOLLOW = "user_following";     //关注的人		    
 	public static final String  AC_USER_INTRO = "user_modify_intro";    //简介		    

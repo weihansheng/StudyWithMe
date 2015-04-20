@@ -57,7 +57,7 @@ public class WelcomeActivity extends Activity {
                      */
 					//openActivity(YixinMainActivity.class);
 					//自动登录
-					String login = SharedPreferencesUtil.get(WelcomeActivity.this, "auto_login");
+					/*String login = SharedPreferencesUtil.get(WelcomeActivity.this, "auto_login");
 					Log.i("WelcomeActivity", "login"+login);
 					if("0".equals(login) || "".equals(login)){
 						LoginUtil.post(WelcomeActivity.this);
@@ -78,14 +78,15 @@ public class WelcomeActivity extends Activity {
 						// 上面是获取manifest中的版本数据，我是使用versionCode
 						// 在从服务器获取到最新版本的versionCode,比较
 						//getUpdate();
-					}
+					}*/
 					//自动登录结束
 					Intent intent = new Intent();
-					if (MyApplication.loginStatus) {
+					intent.setClass(WelcomeActivity.this,LoginActivity.class);
+					/*if (MyApplication.loginStatus) {
 						intent.setClass(WelcomeActivity.this,MainActivity.class);
 					}else {
 						intent.setClass(WelcomeActivity.this,LoginActivity.class);
-					}
+					}*/
 					
 					startActivity(intent);
 					finish();

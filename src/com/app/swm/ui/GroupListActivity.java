@@ -21,6 +21,7 @@ import android.widget.TextView;
 import com.app.swm.R;
 import com.app.swm.adapter.GroupListAdapter;
 import com.app.swm.config.Config;
+import com.app.swm.config.MyApplication;
 import com.app.swm.entity.Group;
 import com.app.swm.http.TwitterRestClient;
 import com.app.swm.util.SharedPreferencesUtil;
@@ -54,11 +55,13 @@ public class GroupListActivity extends Activity implements IXListViewListener{
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_grouplist);
+		MyApplication.getInstance().addActivity(this);
 		context = this;
 		findById();
 		initView();
 		initEvent();
 	}
+	
 	private void findById() {
 		// TODO Auto-generated method stub
 		mListView=(XListView) findViewById(R.id.list_group);
@@ -85,7 +88,7 @@ public class GroupListActivity extends Activity implements IXListViewListener{
 	
 		
 		mListView.setPullLoadEnable(true);
-		mListView.setPullRefreshEnable(true);
+		mListView.setPullRefreshEnable(false);
 		adapter = new GroupListAdapter(context, groupList, options_head);
 		AnimationAdapter animAdapter = new SwingBottomInAnimationAdapter(
 				adapter);
@@ -132,10 +135,6 @@ public class GroupListActivity extends Activity implements IXListViewListener{
 		//loadGroups(1, true);
 		String curDate = TimeUtil.dateToString(new Date(), TimeUtil.FORMAT_MONTH_DAY_TIME_EN);
 		SharedPreferencesUtil.add(context, "news_time", curDate);
-		// 通知 不用刷新
-		/*if (!notice_success) {
-			loadNotice();
-		}*/
 		onLoadMore();
 		onLoad();
 	}
@@ -177,7 +176,7 @@ public class GroupListActivity extends Activity implements IXListViewListener{
 
 			RequestParams params = new RequestParams();
 			params.put("page", page_num);
-			TwitterRestClient.post(Config.AC_NEWS_LATEST, params,
+			TwitterRestClient.get(Config.AC_GET_GROUPLIST, params,
 					new AsyncHttpResponseHandler() {
 
 						@Override
@@ -201,11 +200,18 @@ public class GroupListActivity extends Activity implements IXListViewListener{
 							loadFaillayout.setVisibility(View.GONE);
 							Gson gson = new GsonBuilder().setDateFormat(
 									"yyyy-MM-dd HH:mm:ss").create();
-							String response = new String(data);
 							groupList = gson.fromJson(new String(data),
 									new TypeToken<List<Group>>() {
 									}.getType());
-							page = adapter.appendData(groupList, refesh);
+							System.out.println("result=="+groupList.toString());
+							try {
+								page = adapter.appendData(groupList, refesh);
+							} catch (Exception e) {
+								// TODO: handle exception
+								MyApplication.getInstance().exit();
+								System.out.println("catch到appendData出错");
+							}
+							
 
 							if (groupList != null && groupList.size() == 5) {
 								mListView.setPullLoadEnable(true);

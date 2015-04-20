@@ -261,7 +261,7 @@
                     android:textSize="@dimen/large_text_size" />
 
                 <TextView
-                    android:id="@+id/group_people_num"
+                    android:id="@+id/group_people_num_now"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -278,7 +278,7 @@
                     android:textSize="@dimen/large_text_size" />
 
                 <TextView
-                    android:id="@+id/group_applicants"
+                    android:id="@+id/group_people_num"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10"

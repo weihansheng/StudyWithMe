@@ -50,6 +50,7 @@ public class AboutActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_about);
+		MyApplication.getInstance().addActivity(this);
 		
 		app = (MyApplication) getApplication();
 		progress_text=(TextView) findViewById(R.id.progress);

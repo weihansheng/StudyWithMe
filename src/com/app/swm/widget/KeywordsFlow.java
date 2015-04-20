@@ -43,7 +43,7 @@ public class KeywordsFlow extends FrameLayout implements OnGlobalLayoutListener 
     /** 位移动画类型：从坐标点移动到中心点。 */  
     public static final int LOCATION_TO_CENTER = 4;  
     public static final long ANIM_DURATION = 800l;  
-    public static final int MAX = 10;  
+    public static final int MAX = 12;  
     public static final int TEXT_SIZE_MAX = 25;  
     public static final int TEXT_SIZE_MIN = 15;  
     private OnClickListener itemClickListener; 
@@ -205,8 +205,8 @@ public class KeywordsFlow extends FrameLayout implements OnGlobalLayoutListener 
             for (int i = 0; i < size; i++) {  
                 String keyword = vecKeywords.get(i);  
                 // 随机颜色   
-                //int ranColor = 0xff000000 | random.nextInt(0x0077ffff);  
-                int ranColor = getResources().getColor(R.color.main);  
+                int ranColor = 0xff000000 | random.nextInt(0x0077ffff);  
+                //int ranColor = getResources().getColor(R.color.main);  
                 // 随机位置，糙值   
                 int xy[] = randomXY(random, listX, listY, xItem);  
                 // 随机字体大小   
@@ -216,6 +216,9 @@ public class KeywordsFlow extends FrameLayout implements OnGlobalLayoutListener 
                 txt.setOnClickListener(itemClickListener);  
                 txt.setText(keyword);  
                 txt.setTextColor(ranColor);  
+                
+                //添加背景
+                //txt.setBackgroundColor(getResources().getColor(R.color.main));
                 txt.setTextSize(TypedValue.COMPLEX_UNIT_SP, txtSize);  
                 txt.setShadowLayer(2, 2, 2, 0xff696969);  
                 txt.setGravity(Gravity.CENTER);  

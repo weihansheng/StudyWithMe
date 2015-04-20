@@ -5,6 +5,9 @@
 # view res/layout/activity_main.xml #generated:13
 -keep class android.support.v4.widget.DrawerLayout { <init>(...); }
 
+# view AndroidManifest.xml #generated:93
+-keep class com.app.swm.ScheduleWidgetProvider { <init>(...); }
+
 # view AndroidManifest.xml #generated:29
 -keep class com.app.swm.config.MyApplication { <init>(...); }
 
@@ -12,14 +15,14 @@
 # view res/layout/local_pic_gridview_second_item.xml #generated:8
 -keep class com.app.swm.image.local.MyImageView { <init>(...); }
 
-# view AndroidManifest.xml #generated:96
+# view AndroidManifest.xml #generated:109
 -keep class com.app.swm.receiver.LoginReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:93
+# view AndroidManifest.xml #generated:106
 -keep class com.app.swm.service.DownloadService { <init>(...); }
 
 # view AndroidManifest.xml #generated:88
--keep class com.app.swm.ui.AddGroupActivity { <init>(...); }
+-keep class com.app.swm.ui.CreatGroupActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:75
 -keep class com.app.swm.ui.GroupDetailsActivity { <init>(...); }

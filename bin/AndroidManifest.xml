@@ -86,9 +86,22 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.app.swm.ui.AddGroupActivity"
+            android:name="com.app.swm.ui.CreatGroupActivity"
             android:screenOrientation="portrait" >
         </activity>
+        
+         <receiver android:name="ScheduleWidgetProvider" 
+             android:label="MySchedule">
+            <intent-filter >
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="cn.com.karl.widget.click" >
+                </action>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/myappwidetprovider" />
+        </receiver>
 
         <service android:name="com.app.swm.service.DownloadService" >
         </service>
